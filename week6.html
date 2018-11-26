@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html  dir="ltr" lang="en" xml:lang="en">
+  <head>
+    <title>How might I evaluate my teaching? (Part 2)</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="all">
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@prince-pdf { prince-pdf-page-layout: two-column-right }
+
+@page {
+  margin: 30mm 20mm 25mm 20mm;
+  size: 20cm 25cm;
+
+  @footnotes {
+    border-top: thin solid black; 
+    border-clip: 100px;
+    padding: 0;
+    margin: 0.6em 0 0 0;
+    margin-outside: -60mm;
+    padding: 0.3em 0 0 0;
+  }
+}
+
+@page :left {
+  margin-left: 80mm; 
+
+  @top-left {
+    font: 11pt "Lato", serif;
+    content: "From Wikibooks";
+    margin-left: -60mm;
+    white-space: nowrap; 
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-left-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-right: 60mm;
+  }
+}
+
+@page :right {
+  margin-right: 80mm; 
+
+  @top-right {
+    font: 11pt "Lato", serif;
+    content: string(title, first-except); 
+    white-space: nowrap; 
+    vertical-align: bottom;
+    margin-right: -60mm;
+    padding-bottom: 2em; 
+  }
+
+  @bottom-right-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-left: 60mm;
+  }
+}
+
+html, body, div, h1, h2, h3, p, blockquote, ul, ol, li, pre { 
+  margin: 0; padding: 0 }
+li { margin-left: 1.5em }
+
+title { string-set: title content() }
+
+body { 
+  font: 11pt "PT Serif", serif;
+  text-align: justify;
+  hyphens: auto;
+  counter-reset: figure, table;
+}
+
+h1, h2, h3 { 
+  font: 2.5em "Roboto Condensed", serif;
+  margin: 1.2em 0 0.5em
+}
+
+h1 { margin: 0 0 1em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.2em }
+
+a { color: inherit }
+
+p + p, aside + p { text-indent: 1.4em }
+p.first { text-indent: 0 }
+
+h1,h2,h3,h4,h5,h6, tr { text-align: left; text-align: start; }
+
+table { border-collapse: collapse; counter-increment: table }
+table.top { float: top; margin-outside: -60mm; vertical-align: top; margin-bottom: 1em; }
+td, th { border: thin solid black; padding: 0.2em }
+table:after { content: "Table " counter(table); font-style: italic; padding: 0.5em 0; display: block }
+
+
+figure { 
+  width: 100%; 
+  margin: 0; 
+  counter-increment: figure;
+}
+
+figure img { width: 100% }
+
+.mw-headline-anchor { display: none }
+.mw-editsection { display: none }
+
+aside {
+  background: #fcc;
+  padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
+  font-style: italic;
+  font-family: Lato, "Roboto Condensed", sans-serif;
+  width: 75mm;
+  box-sizing: border-box;
+  float: outside;
+  margin-outside: -80mm;
+  text-align: inside;
+  hyphens: manual;
+}
+
+figure.sidenote {
+  width: 55mm;
+  float: outside;
+  margin-outside: -60mm;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+figcaption:before {
+  content: "Figure " counter(figure) ": ";
+  padding-right: 0.5em;
+}
+
+figure.top { float: top; margin-bottom: 2em; }
+figure.bottom { float: bottom; margin-top: 1em; }
+
+figure.sidecaption figcaption {
+  float: outside;
+  width: 55mm;
+  margin-outside: -60mm;
+}
+
+h1 { margin-outside: -60mm }
+
+figure.wide {
+  width: auto;
+  margin-outside: -60mm;
+}  
+
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+p.author { margin: 2em 0; font-variant: small-caps }
+
+
+/* footnotes */
+
+::footnote-call {
+  content: counter(footnote);
+  font-size: 83%;
+  vertical-align: super;
+  line-height: none
+}
+
+::footnote-marker {
+  content: counter(footnote);
+  list-style-position: inside;
+  font-size: 83%;
+  vertical-align: super;
+  margin: 0; padding: 0 0.3em 0 0;
+}
+
+.foot {
+  float: footnote;
+  font-size: 90%; font-variant: normal;
+  footnote-style-position: inside;
+  margin: 0; padding: 0; text-indent: 0;
+}
+
+@page {
+}
+@media screen {
+  body { margin: 10% 30% 10% 10% }
+  figure { width: 100% }
+  figure.sidecaption figcaption { width: 28%; float: right; margin-right: -30%; }
+  aside { float: none; width: auto; margin: 1em 0 }
+}
+
+
+</style>
+</head>
+  <body>
+
+
+<h1 id="overview">Overview of Week 6 - How might I evaluate my teaching (Part 2)?</h1>
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 6</a> </li>
+  <li> Experiencing - <a href="#experiencing">Evaluating a teaching episode</a> </li>
+  <li> Examining - <a href="#examining">Examining an evaluation experience</a> </li>
+  <li> Explaining - <a href="#explaining">Designing evaluation</a> </li>
+  <li> Applying - <a href="#applying">How can I evaluate my teaching? Designing your evaluation</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+ <!-- ******** Chapter:  1. Where are we? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66644"></a>
+<h2>1. Where are we?</h2>
+<p dir="ltr" id="docs-internal-guid-77eceb60-9055-978e-3ad9-cafd42d19053">This week you will continue engaging with the driving question</p>
+<blockquote>How might I evaluate my teaching practice?</blockquote>
+<p dir="ltr">The focus being to develop a personalised evaluation framework/plan that you can use in <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#b">Assignment 1, Part B</a>. As with last week, you will encounter different approaches to evaluating learning and teaching and it is important to keep your context in mind when assessing these approaches for suitability and flexibility for your context. <!-- The evaluation presented in these two weeks complements the evaluation of emerging practice that you will consider in the content in Week 8.--></p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Chapter:  2. This week&#39;s learning path **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66646"></a>
+<h2>2. This week&#39;s learning path</h2>
+
+<p>This week&#39;s learning path consists of the following four sections.</p>
+<h4 dir="ltr" id="docs-internal-guid-e9d7c237-6f47-7cea-2d0b-e858ec64f39a">Experiencing</h4>
+<p dir="ltr">Where the notion of a teaching episode is clarified and you&#39;re asked to use a particular evaluation instrument to perform a small evaluation on this course.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">1 Moodle book with a total of 4 pages.</p>
+</li>
+</ul>
+<h4 dir="ltr">Examining</h4>
+<p dir="ltr">Asks you to use the components of an evaluation from last week&#39;s learning path to reflect on the evaluation instrument from the Experiencing phase above..</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">A single Moodle book with a single page.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Reflecting and perhaps writing a blog post.</p>
+</li>
+</ul>
+<h4 dir="ltr">Explaining</h4>
+<p dir="ltr">Offers a description of various concepts associated with the design of an evaluation plan.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">One Moodle book with 16 pages.</p>
+</li>
+<li>
+
+<p>Read:</p>
+<ul>
+<li>
+
+<p>2 pages of Ross (2010)</p>
+</li>
+<li>Parts of another evaluation instrument and analyse it.</li>
+<li>Read Tran (2015) for an example of how theory can influence evaluation.</li>
+<li>Read a short blog post and some of the comments on it.</li>
+</ul>
+</li>
+<li>Watch a scene from the movie &quot;Dead Poet&#39;s Society&quot;</li>
+</ul>
+<h4 dir="ltr">Applying</h4>
+<p dir="ltr">Start drawing all of this and last week&#39;s work together to start work on Assignment 1, Part B.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">One Moodle book with 5 pages</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Exercises to help progress Assignment 1, Part B.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. This week’s references **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66645"></a>
+<h2>3. This week’s references</h2>
+<p dir="ltr">The following references can also be found in <a href="https://www.zotero.org/groups/1438432/edu8702/items/collectionKey/ENXRKWKS">the Week 6 section</a> of <a href="https://www.zotero.org/groups/1438432/edu8702/items">the library</a> of the course&#39;s Zotero group.</p>
+<h4>Reference list</h4>
+
+<p></p>
+
+
+<div class="csl-bib-body" style="line-height: 2; padding-left: 2em; text-indent: -2em;">
+
+
+<div class="csl-entry">Alvarez, M. E., &amp; Anderson-Ketchmark, C. (2011). Danielson’s Framework for Teaching. <i>Children &amp; Schools</i>, <i>33</i>(1), 61–63.</div>
+
+
+<div class="csl-entry"></div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Danielson&#39;s%20Framework%20for%20Teaching&amp;rft.jtitle=Children%20%26%20Schools&amp;rft.stitle=Children%20%26%20Schools&amp;rft.volume=33&amp;rft.issue=1&amp;rft.aufirst=Michelle%20E.&amp;rft.aulast=Alvarez&amp;rft.au=Michelle%20E.%20Alvarez&amp;rft.au=Corrine%20Anderson-Ketchmark&amp;rft.date=2011-01&amp;rft.pages=61-63&amp;rft.spage=61&amp;rft.epage=63&amp;rft.issn=1532-8759"></span>
+
+
+<div class="csl-entry">Chickering, A. W., &amp; Gamson, Z. F. (1987). Seven Principles for Good Practice in Undergraduate Education. <i>AAHE Bulletin</i>. Retrieved from https://eric.ed.gov/?id=ED282491</div>
+
+
+<div class="csl-entry"></div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Seven%20Principles%20for%20Good%20Practice%20in%20Undergraduate%20Education&amp;rft.jtitle=AAHE%20Bulletin&amp;rft.aufirst=Arthur%20W.&amp;rft.aulast=Chickering&amp;rft.au=Arthur%20W.%20Chickering&amp;rft.au=Zelda%20F.%20Gamson&amp;rft.date=1987-03&amp;rft.language=en"></span>
+
+
+<div class="csl-entry">Darwin, S. (2012). Moving beyond face value: re-envisioning higher education evaluation as a generator of professional knowledge. <i>Assessment &amp; Evaluation in Higher Education</i>, <i>37</i>(6), 733–745. https://doi.org/10.1080/02602938.2011.565114</div>
+
+
+<div class="csl-entry"></div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1080%2F02602938.2011.565114&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Moving%20beyond%20face%20value%3A%20re-envisioning%20higher%20education%20evaluation%20as%20a%20generator%20of%20professional%20knowledge&amp;rft.jtitle=Assessment%20%26%20Evaluation%20in%20Higher%20Education&amp;rft.stitle=Assessment%20%26%20Evaluation%20in%20Higher%20Education&amp;rft.volume=37&amp;rft.issue=6&amp;rft.aufirst=Stephen&amp;rft.aulast=Darwin&amp;rft.au=Stephen%20Darwin&amp;rft.date=2012-09&amp;rft.pages=733-745&amp;rft.spage=733&amp;rft.epage=745&amp;rft.issn=02602938"></span>
+
+
+<div class="csl-entry">Harvey, J. (Ed.). (1998). <i>Evaluation Cookbook</i>. Heriot-Watt University. Retrieved from http://www.icbl.hw.ac.uk/ltdi/cookbook/</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A0%209528731%206%208&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Evaluation%20Cookbook&amp;rft.publisher=Heriot-Watt%20University&amp;rft.aufirst=Jen&amp;rft.aulast=Harvey&amp;rft.au=Jen%20Harvey&amp;rft.date=1998&amp;rft.tpages=88&amp;rft.isbn=0%209528731%206%208"></span>
+
+
+<div class="csl-entry"><strong>To read (2 pages) </strong>Ross, M. E. (2010). Designing and Using Program Evaluation as a Tool for Reform. <i>Journal of Research on Leadership Education</i>, <i>5</i>(12), 481–500. https://doi.org/10.1177/194277511000501207</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1177%2F194277511000501207&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Designing%20and%20Using%20Program%20Evaluation%20as%20a%20Tool%20for%20Reform&amp;rft.jtitle=Journal%20of%20Research%20on%20Leadership%20Education&amp;rft.stitle=Journal%20of%20Research%20on%20Leadership%20Education&amp;rft.volume=5&amp;rft.issue=12&amp;rft.aufirst=Margaret%20E.&amp;rft.aulast=Ross&amp;rft.au=Margaret%20E.%20Ross&amp;rft.date=2010-10-01&amp;rft.pages=481-500&amp;rft.spage=481&amp;rft.epage=500&amp;rft.issn=1942-7751&amp;rft.language=en"></span>
+
+
+<div class="csl-entry">Tenam-Zemach, M., &amp; Flynn, J. E. (2015). <i>Rubric Nation: Critical Inquiries on the Impact of Rubrics in Education</i>. IAP.</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=urn%3Aisbn%3A978-1-62396-963-9&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Rubric%20Nation%3A%20Critical%20Inquiries%20on%20the%20Impact%20of%20Rubrics%20in%20Education&amp;rft.publisher=IAP&amp;rft.aufirst=Michelle&amp;rft.aulast=Tenam-Zemach&amp;rft.au=Michelle%20Tenam-Zemach&amp;rft.au=Joseph%20E.%20Flynn&amp;rft.date=2015-04-01&amp;rft.tpages=265&amp;rft.isbn=978-1-62396-963-9&amp;rft.language=en"></span>
+
+
+<div class="csl-entry"><strong>To read </strong>Tran, N. D. (2015). Reconceptualisation of approaches to teaching evaluation in higher education. <i>Issues in Educational Research</i>, <i>25</i>(1), 50–61.</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Reconceptualisation%20of%20approaches%20to%20teaching%20evaluation%20in%20higher%20education&amp;rft.jtitle=Issues%20in%20Educational%20Research&amp;rft.volume=25&amp;rft.issue=1&amp;rft.aufirst=N.%20D.&amp;rft.aulast=Tran&amp;rft.au=N.%20D.%20Tran&amp;rft.date=2015-03-21&amp;rft.pages=50-61&amp;rft.spage=50&amp;rft.epage=61&amp;rft.issn=1837-6290"></span>
+
+
+<div class="csl-entry">Uttl, B., White, C. A., &amp; Gonzalez, D. W. (2017). Meta-analysis of faculty’s teaching effectiveness: Student evaluation of teaching ratings and student learning are not related. <i>Studies in Educational Evaluation</i>, <i>54</i>, 22–42. https://doi.org/10.1016/j.stueduc.2016.08.007</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1016%2Fj.stueduc.2016.08.007&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Meta-analysis%20of%20faculty&#39;s%20teaching%20effectiveness%3A%20Student%20evaluation%20of%20teaching%20ratings%20and%20student%20learning%20are%20not%20related&amp;rft.jtitle=Studies%20in%20Educational%20Evaluation&amp;rft.stitle=Studies%20in%20Educational%20Evaluation&amp;rft.volume=54&amp;rft.aufirst=Bob&amp;rft.aulast=Uttl&amp;rft.au=Bob%20Uttl&amp;rft.au=Carmela%20A.%20White&amp;rft.au=Daniela%20Wong%20Gonzalez&amp;rft.date=2017-09-01&amp;rft.pages=22-42&amp;rft.spage=22&amp;rft.epage=42&amp;rft.issn=0191-491X"></span>
+
+
+<div class="csl-entry">Wiliam, D. (2006). Assessment: Learning communities can use it to engineer a bridge connecting teaching and learning. <i>JSD</i>, <i>27</i>(1).</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Assessment%3A%20Learning%20communities%20can%20use%20it%20to%20engineer%20a%20bridge%20connecting%20teaching%20and%20learning&amp;rft.jtitle=JSD&amp;rft.volume=27&amp;rft.issue=1&amp;rft.aufirst=Dylan&amp;rft.aulast=Wiliam&amp;rft.au=Dylan%20Wiliam&amp;rft.date=2006"></span></div>
+
+
+<div class="csl-bib-body"></div>
+
+<p></p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+<h1 id="experiencing">Experiencing - Evaluating a teaching episode</h1>
+<h3>Table of Contents</h3>
+ 
+<ol>
+  <li> <a href="#overview">Overview of Week 6</a> </li>
+  <li> Experiencing - <a href="#experiencing">Evaluating a teaching episode</a> </li>
+  <li> Examining - <a href="#examining">Examining an evaluation experience</a> </li>
+  <li> Explaining - <a href="#explaining">Designing evaluation</a> </li>
+  <li> Applying - <a href="#applying">How can I evaluate my teaching? Designing your evaluation</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<hr>
+
+<div class="book_chapter"><a name="ch66647"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-6180dbfb-e3f3-ebc1-5a27-559b1b1b4901">Last week, we investigated the components of evaluation and how the align to create a strong evaluation plan. In this week, we continue learning about evaluation, but with a more practical focus on developing a plan to evaluate a teaching episode, which is the crux of <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#b">Assignment 1, Part B</a>. Our driving question is the same as last week:</p>
+<blockquote>How might I evaluate my teaching practice?</blockquote>
+<p dir="ltr">To start with, let’s use a concrete example of an evaluation of a teaching episode. In the following discussion, the teaching episode is the online content of a course.</p>
+
+<p></p>
+
+<p><link href="http://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Some notes on &quot;teaching episode&quot; **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66649"></a>
+<h2>2. Some notes on &quot;teaching episode&quot;</h2>
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#b">Assignment 1, Part B</a> asks that you evaluate a <em>teaching episode</em>.  In this book, the <em>teaching episode</em> you&#39;ll be evaluating is part of an online course. What is a <em>teaching epsiode</em>?</p>
+<p dir="ltr">We&#39;ve used this term quite explicitly in an attempt to be inclusive. Given the potential diversity of prior teaching experience for students in this course, we wanted to avoid using a term that excluded anyone&#39;s experience.</p>
+<p dir="ltr">For this course, a teaching episode is a situation where you have prepared some sort of intervention or environment in which students are expected to learn something.</p>
+<h4 dir="ltr">Size?</h4>
+<p dir="ltr">We consider the <em>teaching episode</em> you will be asked to evaluate next as likely being too large for your assignment. We use it here because it&#39;s accessible, your evaluation would provide some useful information for use, but, more importantly, because it provides one clear view of what an evaluation might look like.</p>
+<p dir="ltr">In the end, how &quot;large&quot; a teaching episode you use is up to you. Whatever size teaching episode you choose, your submission will need to fit the word length limit for <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#b">Assignment 1, Part B</a>.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. Evaluating online teaching at USQ **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66648"></a>
+<h2>3. Evaluating online teaching at USQ</h2>
+
+<p>At USQ, there is a document called <a href="https://lor.usq.edu.au/usq/integ/gen/bb035aed-b503-40ec-8fdf-49b7341d5e73/0/?attachment.uuid=83036aa4-71cc-4eb6-a4fe-b035ed223656">StudyDesk Design &amp; Implementation Expectations</a> that is used to evaluate a course’s StudyDesk. This document outlines the “expectations” of a StudyDesk and provides a rubric to evaluate a course’s online presence. It is commonly used by some support teams and can be used by the course examiner to undertake a self-assessment of their StudyDesk.</p>
+
+
+<div class="dj_task" id="connect">
+
+
+<div class="dj_task_title">
+
+<p>Examining the <em>expectations</em> document</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-e400-b937-baae-905ad15536ae">Take a look at the<a href="https://lor.usq.edu.au/usq/integ/gen/bb035aed-b503-40ec-8fdf-49b7341d5e73/0/?attachment.uuid=83036aa4-71cc-4eb6-a4fe-b035ed223656"> StudyDesk Design &amp; Implementation Expectations document</a> and answer the following questions:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Who do you think set these expectations?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What is clear/unclear in the evaluation rubric?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What are some features of the evaluation rubric?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What is missing from/can be improved in the evaluation rubric?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How do you think the evaluation rubric was created/constructed?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">When you look at the evaluation rubric, do you think that you would like to use it to evaluate your online teaching space?</p>
+</li>
+</ol></div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script></div>
+
+ <!-- ******** Chapter:  4. How does EDU8702 stack up? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66650"></a>
+<h2>4. How does EDU8702 stack up?</h2>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>We recommend completing the following activity, at least using the <em>expectations</em> document to evaluate an aspect of this course&#39;s Study Desk.  However, if you&#39;re worried about sharing your evaluation via the following means, please feel free not to share.</p>
+
+
+<div class="dj_task" id="connect">
+
+
+<div class="dj_task_title">
+
+<p>Evaluating EDU8702</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-5975a610-e40e-69d2-75a2-8fcf463f585e">Now, using one criterion (e.g. <em>A course orientation is provided</em>) from the <a href="https://lor.usq.edu.au/usq/integ/gen/bb035aed-b503-40ec-8fdf-49b7341d5e73/0/?attachment.uuid=83036aa4-71cc-4eb6-a4fe-b035ed223656">StudyDesk Design &amp; Implementation Expectations document</a>, evaluate this course (yes, EDU8702!).</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What do you find?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Does this course meet the expectations for that criteria and its indicators? Why or why not? What could be improved?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How easy is it to evaluate this course using this evaluation rubric?</p>
+</li>
+</ul>
+<p dir="ltr">If you are comfortable with it, please share your evaluation of the EDU8702 StudyDesk in the forum. This will provide valuable feedback to us in the design and implementation of the course. It will be very much appreciated!</p>
+</div>
+</div></div>
+
+<h1 id="examining">Examining - Examining an evaluation experience</h1>
+<h3>Table of Contents</h3>
+ 
+<ol>
+  <li> <a href="#overview">Overview of Week 6</a> </li>
+  <li> Experiencing - <a href="#experiencing">Evaluating a teaching episode</a> </li>
+  <li> Examining - <a href="#examining">Examining an evaluation experience</a> </li>
+  <li> Explaining - <a href="#explaining">Designing evaluation</a> </li>
+  <li> Applying - <a href="#applying">How can I evaluate my teaching? Designing your evaluation</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<hr>
+
+<div class="book_chapter"><a name="ch66651"></a>
+<h2>1. Reflecting on the evaluation experience</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e411-d3ba-8bd2-e8d38e4025a2">In Experiencing, <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=815098&amp;chapterid=66650">you used an</a> evaluation rubric (<a href="https://lor.usq.edu.au/usq/integ/gen/bb035aed-b503-40ec-8fdf-49b7341d5e73/0/?attachment.uuid=83036aa4-71cc-4eb6-a4fe-b035ed223656">StudyDesk Design &amp; Implementation Expectations</a>) to evaluate a teaching episode (an aspect of the EDU8702 StudyDesk). In this book, we focus on this experience of evaluating EDU8702 using the StudyDesk Expectations rubric.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+
+
+<div class="dj_task" id="connect">
+
+
+<div class="dj_task_title">
+
+<p>Examining an evaluation using the <em>expectations</em> document</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-e412-b078-02c0-a904ca2b1014">Drawing on the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=809187&amp;chapterid=66464">components of evaluation</a> that you learned about in Week 5, reflect on and answer the following questions with respect to the StudyDesk Design &amp; Implementation Expectations document:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What was the purpose of the evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Why would a teacher (or some other stakeholder) want to evaluate this, i.e. what type of goal do they want to address?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What type of evaluation was this?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What type of evidence did you use in the evaluation? Are there other types of evidence you could use to support the evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What types of data would support this evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What type of data collection method was used?  </p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How effective do you think that this evaluation is for this type of teaching episode?</p>
+</li>
+</ul>
+<p dir="ltr">Now, in a blog post, write a reflective summary of your experience of using the StudyDesk Expectations evaluation rubric and of reviewing the components of evaluations with regards to the StudyDesk Expectations evaluation rubric.</p>
+</div>
+</div></div>
+
+<h1 id="explaining">Explaining - Designing evaluation</h1>
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 6</a> </li>
+  <li> Experiencing - <a href="#experiencing">Evaluating a teaching episode</a> </li>
+  <li> Examining - <a href="#examining">Examining an evaluation experience</a> </li>
+  <li> Explaining - <a href="#explaining">Designing evaluation</a> </li>
+  <li> Applying - <a href="#applying">How can I evaluate my teaching? Designing your evaluation</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<hr>
+
+<div class="book_chapter"><a name="ch66652"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e41d-6e6b-dc2c-98dd50a18cad">The aim now is to help provide some abstract conceptualisations that will help you develop a plan to design an evaluation plan for improving learning and teaching. </p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Build on your existing work</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-e41e-593f-ff9a-410c8ba29078" style="line-height: 1.38; margin-top: 10pt; margin-bottom: 0pt;">This week and last you have been asked to develop a range of artefacts and thinking about teaching episodes you might evaluate using a range of conceptualisations that have been introduced.</p>
+<p dir="ltr" style="line-height: 1.38; margin-top: 10pt; margin-bottom: 0pt;">Before you start working through this book, remind yourself of that work and use it to ask yourself questions and make choices about the conceptualisations and resources introduced here.</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Designing evaluations **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66653"></a>
+<h2>2. Designing evaluations</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e423-0689-c28e-18c2acedba9d">Designing an evaluation can be as simple or complex as required based on the purpose of the evaluation. For example, if you simply want to know “How did my students like the interview an expert section in learning analytics?”, then you could design a feedback tool or or form that asks them that simple question and uses a Likert scale for responses with a free text comment section. However, evaluations can also be significantly more complex as you saw in the StudyDesk Expectations document in the Experience and Examine books.</p>
+<p dir="ltr">The critical aspect that underpins the simplicity or complexity lies in the purpose of the evaluation: Why are you evaluating this teaching episode - for what benefit?</p>
+<p dir="ltr">To begin, it is worthwhile to review some approaches to evaluation from a program perspective. The <a href="http://files.eric.ed.gov/fulltext/EJ913600.pdf">article by Ross (2010)</a> presents an overview of designing a program evaluation as a tool for reform, which is a larger goal than evaluating a teaching episode. However, pages 482–484 provide a clear overview of five approaches that are good to bear in mind as you design your evaluation.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Five approaches to designing an evaluation</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-e41e-593f-ff9a-410c8ba29078" style="line-height: 1.38; margin-top: 10pt; margin-bottom: 0pt;">As you read pages 482–484, consider the following questions:</p>
+<ul style="margin-top: 0pt; margin-bottom: 0pt;">
+<li dir="ltr">
+<p dir="ltr">Which approach do you think works best for your teaching episode?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do you see value in combining two or more of the approaches?</p>
+</li>
+</ul>
+<p dir="ltr">If the article is interesting, then please do continue to read it as it provides a clear discussion of how a program evaluation was constructed. </p>
+</div>
+</div>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Chapter:  3. Foundational components of an evaluation document **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66654"></a>
+<h2>3. Foundational components of an evaluation document</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e424-b6a6-703e-789c37a33544">There are three foundational components to structuring a formal evaluation document. These are the evaluation criteria, indicators of these criteria, and evidence for these criteria.</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Evaluation criteria;</p>
+
+<p>The criteria that are used to evaluate whether or the degree to which something has been effective, implemented, etc. These are the “big” parts of the evaluation - the combined criteria will form the foundation of the evaluation.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Indicators; and,</p>
+
+<p>The indicators are different aspects of each criteria that work together to provide an overall picture of whether the criteria has been met, or to what degree the criteria has been met.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Evidence.</p>
+
+<p>This supports each of the indicators to demonstrate competence, degree of competence, or lack thereof, of each indicator. These combine to provide an overall view of the criteria.</p>
+</li>
+</ol>
+<p dir="ltr">As an example, in the StudyDesk Expectations evaluation rubric, there are ten criteria, and each criterion has between three and nine indicators that help the evaluator determine what level of standard is being demonstrated in a StudyDesk. In the following image, you can see that the criteria is “Legal and institutional requirements are addressed”. There are four indicators (4.1, 4.2, 4.3, and 4.4) that are rated on their degree of presence (yes, no, partly) and that will help the evaluator determine to what degree this criteria is being addressed (rating of needs work, developing, good practice, or exemplary). The evidence can be placed into the “comments” box at the bottom. Finally, the rating can be determined based on how well the indicators are being met. Note that the ratings are described at the beginning of this evaluation rubric and are presented below the annotated table.</p>
+
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/david_jones/35769878313/in/dateposted-public/" title="Components of an evaluation document"><img alt="Components of an evaluation document" height="160" src="https://farm5.staticflickr.com/4380/35769878313_91ed626b1a_z.jpg" width="640"></a></p>
+
+<p>Depending on your evaluation goal and style, you might need to include a rating scale that will help you determine the degree to which something is or is not occurring in your teaching episode. Not every evaluation has a rating scale, but they can support clearer understanding of the evaluation, simpler decision making, and enable easier dissemination of results, where applicable. The following rating table has been taken from the StudyDesk Expectations evaluation rubric.</p>
+
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/david_jones/35769877303/in/dateposted-public/" title="Review scale descriptions"><img alt="Review scale descriptions" height="74" src="https://farm5.staticflickr.com/4357/35769877303_ee1963743b_z.jpg" width="640"></a></p>
+
+<p></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Chapter:  4. Another example evaluation **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66655"></a>
+<h2>4. Another example evaluation</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-eecf-2a5b-4e5f-c9863e4da3a6">Time to look at another more broadly used example of evaluation, in particular, Charlotte Danielson’s (2007) <a href="http://www.salemschools.com/uploads/file/Forms/2013-framework-for-teaching-evaluation-instrument.pdf">Framework for Teaching Evaluation Instrument</a>. The intent behind examining the Danielson framework is to examine how they have constructed and described their criteria, indicators and evidence. The Danielson Framework has been included so that you can see a non-tabular version. Evaluation rubrics/frameworks/supporting documents can be designed in many different ways, and it can be dependent on the types of data and evidence that you are using.</p>
+<p dir="ltr">Alvarez et al. (2011) describe the original intent behind this work was “that it be used for self-assessment, teacher preparation, recruitment and hiring, mentoring, peer coaching, supervision, and evaluation” (p. 61). It’s a tool to help make judgements about complex task of teaching within schools (not higher education, but it might arguably be used in higher education). It does this by identifying “four domains of teaching responsibility: planning and preparation (Domain 1), classroom environment (Domain 2), instruction (Domain 3), and professional responsibilities (Domain 4)” (Alvarez et al., 2011, p. 61). Each domain broken up further with indicators, criteria and evidence.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Examining the framework</p>
+</div>
+
+
+<div class="dj_activity">Using the Framework for Teaching Evaluation Instrument:</div>
+
+
+<div class="dj_activity"><ol>
+<li dir="ltr">
+<p dir="ltr">Choose one domain to focus on - if your teaching episode aligns with one of these domains, then we recommend that you focus on that domain.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Look at the criteria and make a judgement: Do these criteria address the key aspects of that domain? Is anything missing? What can be aligned/transferred to tertiary teaching contexts?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Choose one criteria and read its description and indicators. Do these align and support the criteria? Does the evidence align and support the criteria and indicators?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What else do you need to know in order to use this criteria with its indicators to evaluate a teaching episode?</p>
+</li>
+</ol></div>
+</div>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Chapter:  5. Choosing criteria, indicators and evidence **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66752"></a>
+<h2>5. Choosing criteria, indicators and evidence</h2>
+<p dir="ltr" id="docs-internal-guid-0dce896b-eed1-6be1-d889-fd8a0c11415b">Designing an evaluation document/rubric/instrument is complex. How do you know what is important? What is not?</p>
+<p dir="ltr">Alvarez et al (2011) explain that the Danielson Framework arose out of work done at a large educational testing service in the USA. It was developed “using practice, wisdom and research”, field tested and further researched. Research that is outlined in more detail in Danielson (2007).</p>
+<p dir="ltr">You (and most practising higher education teachers) don’t have the time (and perhaps knowledge) to undertake such rigorous and important work in developing your evaluation instrument. What can you do?</p>
+<p dir="ltr">There are at least three possible answers to that question:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Use your own knowledge and assumptions;<br class="kix-line-break">As established <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803179&amp;chapterid=66003">earlier in the course</a>, your existing assumptions are not the best foundation upon which to base practice. It is important that you question those assumptions.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Use existing theory to guide your design; or,<br class="kix-line-break">As established earlier, theory can be a <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66013">useful way to question assumptions</a> and <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66012">focus on what’s important</a> for learning and teaching.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Use existing evaluation instruments.<br class="kix-line-break">You are not the first person to wish to evaluate their learning and teaching. There are established evaluation instruments and plans.</p>
+</li>
+</ol>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Chapter:  6. Using theory **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66753"></a>
+<h2>6. Using theory</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-eed2-4405-7e4e-0605cc2e0a4e">Back in <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66012">the week 2 learning path</a> you were introduced to the perspective of theory as a tool for offering an informed perspective on a complex domain and offering principles for action. With evaluation, theory can be used in at least two broad ways:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">The design of broad evaluation approaches (or paradigms).<br class="kix-line-break">The Ross (2010) reading from earlier in this book describes five classifications of evaluation approaches, which are arguably based on different broad theoretical foundations.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">The design of specific evaluation plans and instruments.<br class="kix-line-break">One you’ve chosen a particular evaluation approach/paradigm the design of your particular plan or instrument can be guided by theory. For example, theory can guide your choice of criteria, indicators and evidence.</p>
+</li>
+</ol>
+<p dir="ltr">Given the focus here on helping you answer the question</p>
+<blockquote>How might I evaluate my teaching?</blockquote>
+<p dir="ltr">The focus here will be on the second way - using theory to design specific evaluation plans. The next couple of pages illustrate the theory and literature underpinning the StudyDesk expectations document and look at a paper that uses theory to identify three different ways for students to evaluate teaching.</p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Sub-chapter:  6.1. Theory underpinning the expectations document **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66754"></a>
+<h3>6.1. Theory underpinning the expectations document</h3>
+<p dir="ltr" id="docs-internal-guid-97bbb854-eed3-975d-bfbd-db5a9031aaaa">The <a href="https://lor.usq.edu.au/usq/integ/gen/bb035aed-b503-40ec-8fdf-49b7341d5e73/0/?attachment.uuid=83036aa4-71cc-4eb6-a4fe-b035ed223656">StudyDesk Expectations document</a> you used earlier in this learning includes a references section that points to the research and theory used to design that document, including (but not limited to):</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Chickering and Gamson’s (1987) seven principles for good practice in undergraduate education; and,<br class="kix-line-break">A widely used and updated advice on effective features of good learning design. Principle #2 - develop reciprocity and cooperation among students - can be seen in the expectation document’s indicator 10.4 - Activities explicitly encourage collaboration and interaction between students.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">The <a href="https://coi.athabascau.ca/coi-model/an-interactive-coi-model/">Community of Inquiry Model</a>.<br class="kix-line-break">This work proposes that there are three important components of an educational experience: <a href="https://coi.athabascau.ca/coi-model/description-cognitive-presence/">cognitive presence</a>, <a href="https://coi.athabascau.ca/coi-model/description-social-presence/">social presence</a>, and <a href="https://coi.athabascau.ca/coi-model/description-teaching-presence/">teaching presence</a>. Teaching presence - “defined as the design, facilitation, and direction of cognitive and social processes for the purpose of realising personally meaningful and educational worthwhile learning outcomes” - can be seen in a number of the elements of the expectation document’s first criteria. For example, indicator 1.8 Each weekly/topic section includes an explicit guide for required student activity”.</p>
+</li>
+</ul>
+<p dir="ltr">In a perfect world, any interventions you plan for your teacher inquiry into student learning (TISL) will be informed by appropriate theories, frameworks and models. Those should provide pointers on what is considered important enough to measure and why it is important.</p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Sub-chapter:  6.2. Using theory to ponder Student Evaluation of Teaching (SET) **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66755"></a>
+<h3>6.2. Using theory to ponder Student Evaluation of Teaching (SET)</h3>
+<p dir="ltr" id="docs-internal-guid-97bbb854-eed4-3893-10a4-ad21f73f1ce7">Most universities employ a form of student evaluation of teaching (SET) in the form of end of semester surveys for each course. Tran (2015) identifies that a major issue with much of this practice is based on implicit and explicit beliefs about quality learning. Tran (2015) argues that the use of frameworks or theories of teaching and student learning offer a useful way to “unpack the ‘hidden’ assumption about teaching in any teaching evaluation” (p. 51). (Remember <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803179&amp;chapterid=66003">that assumptions</a> are a major challenge to TISL). To demonstrate this, Tran (2015) uses Bigg’s 3P model of teaching and learning to identify three different approaches to SET and then argue for a particular approach.</p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Read and ponder</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-eed4-dc52-1d7d-627d243c2871">Read <a href="https://www.zotero.org/groups/1438432/edu8702/items/collectionKey/ENXRKWKS/itemKey/BNE39GJB" target="_blank">Tran (2015)</a>, with a particular focus on the sections examining the three different approaches to SET - Student presage focused evaluation; Teaching focused approach; and, learning focused approach.</p>
+<p dir="ltr">As you develop the evaluation plan for your teaching episode, ask yourself about the focus of your evaluation: what students are; what the teacher does; or, what students do?</p>
+(If you have a sense of deja vu, that may be due to <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66014">an earlier mention in this course</a> of Bigg’s 3 levels of teaching.)</div>
+</div></div>
+
+ <!-- ******** Chapter:  7. Reuse other evaluation instruments **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66756"></a>
+<h2>7. Reuse other evaluation instruments</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-eed5-e67e-9be9-f920f247a093">There has always been work going on around the evaluation of learning and teaching, interest that has grown in recent years with a growing expectation that higher education should be able to demonstrate its effectiveness and value for money. Consequently, there are existing evaluation instruments and plans that can be drawn upon.  </p>
+<p dir="ltr">Some examples include:</p>
+<ul>
+<li dir="ltr"><a href="http://www.icbl.hw.ac.uk/ltdi/cookbook/">Evaluation Cookbook</a> (Harvey, 1998)<br>A practical guide containing a range of ideas and examples &quot;aimed at lecturers who were interested in evaluating materials for their effectiveness in achieving specific learning objectives&quot;.</li>
+<li dir="ltr"><a href="https://www.nap.edu/read/10024/chapter/13">Samples of questionnaires used to evaluate undergraduate student learning</a><br class="kix-line-break">
+<p dir="ltr">An appendix to an online book. The book is examining evaluation and improvement in the teaching of STEM courses. This appendix includes examples of questionnaires for assessing student learning.<br><br>I wonder how where these examples sit within the three models proposed by Tran (2015)?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://www.nap.edu/read/10024/chapter/14">Examples of questions for conducting peer evaluations of teaching<br class="kix-line-break"></a>Another appendix from the same online book as the first bullet point. This appendix has examples of questions used in peer evaluations of teaching.</p>
+</li>
+<li><a href="https://www.learning.ox.ac.uk/media/global/wwwadminoxacuk/localsites/oxfordlearninginstitute/documents/supportresources/lecturersteachingstaff/resources/resources/Structured_Teaching_Reflection_Tool.pdf">Structure teaching reflection tool</a>.<br>A simple tabular document from the University of Oxford that offers a structured approach to guiding teacher self-reflection.</li>
+<li dir="ltr">
+<p dir="ltr">Howard University’s <a href="http://www.cetla.howard.edu/teaching_resources/TeachingEvaluation.html">Teaching Evaluation Toolbox<br class="kix-line-break"></a>Provides links to resources and sample instruments to help with self-assessment, student evaluation, and peer review.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="http://geoffcain.com/blog/education/evaluating-online-courses-a-prelude/">Evaluating an online course</a>.<br class="kix-line-break">A blog post that introduces a series of blog posts each examining a particular rubric for evaluating an online course (similar to the USQ Study Desk Expectations document). This post includes a link to the rubrics being examined. Each of the four follow up posts illustrate one way to analyse an existing evaluation instrument.</p>
+</li>
+<li>San Francisco University&#39;s &quot;<a href="http://qolt.sfsu.edu/content/qolt-evaluation-instrument">Comprehensive Tool for Enhancing Quality</a>&quot;.<br>A diagnostic tool to help educators self-assess a course along with a collection of <a href="http://qolt.sfsu.edu/content/resources">related resources</a>. Another example of a instrument like the Expectations document.<br><br></li>
+</ul>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Sub-chapter:  7.1. Challenges to re-use **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66757"></a>
+<h3>7.1. Challenges to re-use</h3>
+<p dir="ltr" id="docs-internal-guid-97bbb854-eef4-f226-6bdc-cee1c335174f">Wiliam (2006) argues</p>
+<blockquote>That is why “what works” is not the right question in education. Everything works somewhere, but nothing works everywhere. (p. 17)</blockquote>
+<p dir="ltr">Taking something (e.g. an evaluation instrument) from one educational context and using it in another is not always straight forward or appropriate. Differences in the context may make re-use less than useful.</p>
+<h4 dir="ltr">Use of the Danielson framework</h4>
+<p dir="ltr">Earlier in this book you looked at the Danielson framework and its origins. It is an approach to evaluation that has been widely used in the United States, especially more recently as part of moves in that country based around the idea of teacher accountability. A movement that received significant government funding and hence focused the attention of many stakeholders. A number of whom - including the <a href="http://k12education.gatesfoundation.org/resource/danielsons-framework-for-teaching-for-classroom-observations/">Bill and Melinda Gates Foundation</a> -  looked to the Danielson framework as a potential tool.</p>
+<p dir="ltr">In <a href="http://www.edweek.org/ew/articles/2016/04/20/charlotte-danielson-on-rethinking-teacher-evaluation.html">this blog post</a>, Danielson herself reflects on some of the issues with teacher accountability and its implementation the USA, including:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">“those with the responsibility to ensure good teaching in schools...don&#39;t always have the skill to differentiate great teaching from that which is merely good, or perhaps even mediocre”</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">“There is also little consensus on how the profession should define ‘good teaching.’”</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">“Even when personnel policies define good teaching as the teaching practices that promote student learning and are validated by independent research, few jurisdictions require their evaluators to actually demonstrate skill in making accurate judgments”</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">“since evaluators must assign a score, teaching is distilled to numbers, ratings, and rankings, conveying a reductive nature to educators&#39; professional worth and undermining their overall confidence in the system.”</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">“I&#39;m deeply troubled by the transformation of teaching from a complex profession requiring nuanced judgment to the performance of certain behaviors that can be ticked off on a checklist.”</p>
+</li>
+</ul>
+<p dir="ltr">Comments that touch on some of the difficulties associated with evaluation and measurement, such as those raised by <a href="https://en.wikipedia.org/wiki/Campbell%27s_law">Campbell’s law</a> and <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law">Goodhart’s law</a>.</p>
+
+<p>Issues that are somewhat reinforced by <a href="http://www.edweek.org/ew/articles/2016/04/20/charlotte-danielson-on-rethinking-teacher-evaluation.html#comment-3335867644">the comments</a> on Danielson’s post. Especially those that give an insight into the apparent experience of teachers who have experience use of the Danielson framework.
+<script src="https://djon.es/edu8702_macro.js" type="mce-text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Chapter:  8. A critical view of evaluation **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66758"></a>
+<h2>8. A critical view of evaluation</h2>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p> A critical inquiry into evaluation would seek to reveal some of the assumptions that underpin it in order to better understand it and its impact. Again, due to space, we’ll only briefly touch on this and we’ll start with the following scene from the movie Dead Poet’s Society.</p>
+
+<p><iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/LjHORRHXtyI" width="560"></iframe></p>
+
+<p> </p>
+<p dir="ltr" id="docs-internal-guid-94cfd848-eef6-3fde-74e9-feee63c7e717"><a href="https://books.google.com.au/books?hl=en&amp;lr=&amp;id=HAYoDwAAQBAJ&amp;oi=fnd&amp;pg=PA1&amp;dq=%22rubric+nation%22&amp;ots=znGcSHldFt&amp;sig=PtHO94AsMEfLd20t5moAEguRbB0#v=onepage&amp;q=%22rubric%20nation%22&amp;f=false">The foreword</a> (Westheimer, 2015) from the book “Rubric Nation: Critical Inquiries on the Impact of Rubrics in Education” uses this scene to make one point about evaluation. In particular, the use of rubrics and the type of evaluation to which the Danielson framework has been put in the USA. It argues that those sort of calls for standardised measures and evaluation are part of a broader global movement.    It goes on to identify some of issues that may arise from evaluation.  In particular,</p>
+<blockquote>..the idea that we should clearly articulate educational goals and then devise methods for determining whether those goals are met is irresistibly tidy...Uncritical acceptance of even such a commonsense-seeming idea, however, is misguided for the following reason: education is first and foremost about human relationship and interaction, and as anyone who tried to create a rubric for family fealty or for love or for trust would discover, any effort to quantify complex human interactions quickly devolves into a fool’s errand. (Westheimer, 2015, p. viii)</blockquote>
+<p dir="ltr">These comments are specifically aimed at the idea of standardised evaluation, not to individual teachers evaluating their own performance in contextually appropriate and informed ways. As such they appear to offer a potential explanation for some of <a href="http://www.edweek.org/ew/articles/2016/04/20/charlotte-danielson-on-rethinking-teacher-evaluation.html#comment-3335867644">the comments</a> on Danielson’s blog post. They also point to some of the challenges in widespread re-use of evaluation instruments or approaches from other contexts, and the inherent difficulty involved in evaluating learning and teaching.</p></div>
+
+ <!-- ******** Chapter:  9. Strategies for designing evaluation **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66656"></a>
+<h2>9. Strategies for designing evaluation</h2>
+
+<p>The following pages provide an overview of four strategies that can help you design your evaluation clearly and solidly. The four strategies are:</p>
+<ol>
+<li>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+Embed your evaluation in the learning and teaching process for learners and teachers.</li>
+<li>Plan the evaluation with deliberate intent</li>
+<li>Think carefully about your data collection and sampling procedures.</li>
+<li>Close the loop: feedback and feedforward what you learn from your evaluation.</li>
+</ol>
+
+<p></p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Sub-chapter:  9.1. Embed your evaluation in the L&amp;T process **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66657"></a>
+<h3>9.1. Embed your evaluation in the L&amp;T process</h3>
+
+<p>When designing your learning and teaching activities, think about ways to make your students’ progress in learning explicitly visible to them and to yourself.</p>
+
+<p>For example, in EDU8702, you can see your activity tracking on the right side of the course activity page - you can track your progress through the content in this way. You are also asked to regularly reflect on your learning through your blog and your assignments are designed to review those reflections and build on them.</p>
+
+<p>These combined learning experiences can be a valuable source of evaluative information for you as the learner and the teacher. Both can see your progress and development in terms of the course content, learning design, and progress.
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p></div>
+
+ <!-- ******** Sub-chapter:  9.2. Plan the evaluation with intent **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66658"></a>
+<h3>9.2. Plan the evaluation with intent</h3>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e49d-876f-8c99-a96430f09f8b">This refers to the evaluation component prompts that you discovered in Week 5 and that were reiterated in the Examine book. However, there are two additional prompts regarding timelines and resources, because these need to be known in order to design an evaluation.</p>
+<ol><ol>
+<li dir="ltr">
+<p dir="ltr">What is the <strong>purpose</strong> of the evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What kinds of <strong>evidence</strong> will help you understand more about these issues or aims?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What <strong>sources</strong> of information will you use?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What <strong>methods</strong> or approach will you take in collecting the information?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What <strong>timeline</strong> would be best for undertaking each element of the evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What <strong>resources</strong> and support do you have?</p>
+</li>
+</ol></ol>
+<p dir="ltr">It is important to ensure that each of these aspects of the evaluation align. In this way, they will form a strong basis for the evaluation. The following evaluation planning grid is an example of how you can investigate the alignment of these components.</p>
+
+<p><a data-flickr-embed="true" href="https://www.flickr.com/photos/david_jones/36534486486/in/dateposted-public/" title="Sample format for an evaluation planning grid"><img alt="Sample format for an evaluation planning grid" height="351" src="https://farm5.staticflickr.com/4334/36534486486_890a4d4c23_z.jpg" width="640"></a></p>
+
+<p> </p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  9.3. Think about data collection and sampling procedures **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66659"></a>
+<h3>9.3. Think about data collection and sampling procedures</h3>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e4a0-e167-1a47-95d9ad9ac166">Remember to check the university requirements regarding evaluation of learning and teaching, and adhere to any policies that might be in place, e.g. the <a href="http://policy.usq.edu.au/documents/13320PL">Evaluation of Teaching, Courses and Programs Policy and Procedure </a>at USQ. Also, discuss evaluation with your colleagues to learn from their experiences.</p>
+<ol><ol>
+<li dir="ltr">
+<p dir="ltr">Use multiple viewing lenses or triangulation. If you collect data from multiple sources and/or a variety of perspectives, it creates richer and deeper understanding of what is happening in the area being evaluated. For example, collecting student and teacher feedback can provide a more in-depth understanding of a teaching episode.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Decide on the amount, type, and format of data based on what you need and what you can use. Ensure that the amount, type, and format of data aligns with your evaluation purpose.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Consider your sampling procedures and response rates, where applicable.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Complete any evaluation questionnaires or tasks yourself. This will help you check for errors, comprehensibility, and reasonability.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Ensure that you can actually make a decision based on the evaluation data that you have collected.</p>
+</li>
+</ol></ol>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  9.4. Close the loop: feedback and feedforward **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66660"></a>
+<h3>9.4. Close the loop: feedback and feedforward</h3>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e4a1-79de-37aa-9fb661354b41">After you have completed the evaluation and determined actions based on the results, consider who else might benefit from hearing about your evaluation, and how you might disseminate this information to them. As you would have seen throughout these two weeks on evaluation, it is difficult to find information on evaluation of teaching practice in higher education, so your colleagues could benefit significantly from you sharing your experiences, learnings, and outcomes.</p>
+<p dir="ltr"></p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Applying it to your episode</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" style="line-height: 1.38; margin-top: 10pt; margin-bottom: 0pt;"></p>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e4a1-eac4-3b0d-e62a856e7e1a">Considering the teaching episode that you will evaluate for Assignment 1, Part B, develop responses and/or approaches to addressing the four strategies listed above. Perhaps, write a reflective blog post on how you will address the four aspects of these strategies and how these will impact your evaluation design, e.g. what additional/alternative considerations you might have, how you might re-imagine your evaluation, etc.</p>
+</div>
+</div></div>
+
+<h1 id="applying">Applying - How can I evaluate my teacing? Designing your evaluation</h1>
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 6</a> </li>
+  <li> Experiencing - <a href="#experiencing">Evaluating a teaching episode</a> </li>
+  <li> Examining - <a href="#examining">Examining an evaluation experience</a> </li>
+  <li> Explaining - <a href="#explaining">Designing evaluation</a> </li>
+  <li> Applying - <a href="#applying">How can I evaluate my teaching? Designing your evaluation</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<hr>
+
+<div class="book_chapter"><a name="ch66662"></a>
+<h2>1. Introduction</h2>
+
+<p>During this week, you have been investigating how to design an evaluation based on the components of evaluation discussed in Week 5 and a developing understanding of the parts and processes of designing an evaluation. Throughout this week, it has been assumed that you have identified the teaching episode that you will focus on, but it is now important to make this explicit here.</p>
+
+<p>Work through the following activities to more fully develop your evaluation for your teaching episode. But first, read through all of the activities, before you start working on each of the parts.</p>
+
+<p><link href="http://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Understand Assignment 1, Part B</p>
+</div>
+
+
+<div class="dj_activity">Now might be a good time to revisit <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#b">Assignment 1, Part B</a>.</div>
+</div></div>
+
+ <!-- ******** Chapter:  2. Teaching episode context **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66663"></a>
+<h2>2. Teaching episode context</h2>
+
+<p><link href="http://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>What&#39;s your context?</p>
+</div>
+
+
+<div class="dj_activity">Describe your teaching episode in its full context. This will be a refinement of the description that you prepared in <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=809192&amp;chapterid=66558">the Applying book in Week 5</a>.</div>
+</div></div>
+
+ <!-- ******** Chapter:  3. Plan with intent **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66664"></a>
+<h2>3. Plan with intent</h2>
+
+<p><link href="http://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Laying the ground work</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-e4b2-11a2-38af-23c775f5df81">Answer the following questions for the evaluation of your specific teaching episode:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">What is the purpose of the evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What kinds of evidence will help you understand more about these issues or aims?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What sources of information will you use?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What methods or approach will you take in collecting the information?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What timeline would be best for undertaking each element of the evaluation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What resources and support do you have?</p>
+</li>
+</ol></div>
+</div></div>
+
+ <!-- ******** Chapter:  4. Criteria, indicators and evidence **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66665"></a>
+<h2>4. Criteria, indicators and evidence</h2>
+
+<p><link href="http://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Identifying your criteria, indicators and evidence</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-97bbb854-e4b3-2fe4-cdb4-62002870d589">Considering the purpose of your evaluation, construct responses to the following questions to design your evaluation plan.</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Criteria</p>
+</li>
+<ol>
+<li dir="ltr">
+<p dir="ltr">What criteria can be used to evaluate your teaching episode that will align with your evaluation purpose?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Looking at these criteria, do they adequately cover your evaluation purpose?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do you need more criteria?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do you need fewer criteria?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are there some criteria that could be combined?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are there some criteria that are too complex and need to be separated?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Does each criterion cover one area/specific item?</p>
+</li>
+</ol>
+<li dir="ltr">
+<p dir="ltr">Indicators. <br>For each of the criteria above, answer the following questions:</p>
+</li>
+<ol>
+<li dir="ltr">
+<p dir="ltr">What will indicate that this criteria is being addressed/incorporated/undertaken?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How will these indicators be assessed, i.e. what kind of rating scale would be appropriate, if appropriate?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are there enough indicators for each criteria?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are there too many indicators for each criteria?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Could some indicators be combined?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Does each indicator assess only one aspect?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Should any indicators be separated into two?</p>
+</li>
+</ol>
+<li dir="ltr">
+<p dir="ltr">Evidence. <br>For each of the indicators above, answer the following questions:</p>
+</li>
+<ol>
+<li dir="ltr">
+<p dir="ltr">What types of evidence could be used to support the indicators?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Is it reasonable evidence?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">When looking at the evidence for all indicators for one criteria, does it all align?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Is there any other evidence listed in Part 2 that has not been used? Should it be used? Should it be removed from the list in Part 2?</p>
+</li>
+</ol></ol></div>
+</div></div>
+
+ <!-- ******** Chapter:  5. Developing your evaluation plan **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66666"></a>
+<h2>5. Developing your evaluation plan</h2>
+<p dir="ltr" id="docs-internal-guid-97bbb854-e4b4-62d1-04d8-8565ee5e8ac8">Combine the information from Parts 1 to 3 into an evaluation plan. You will need to consider how to present the various pieces of information so that a colleague could also use the evaluation plan for the teaching episode. This will help you consider the clarity of the information that you are presenting.</p>
+<p dir="ltr">You can create an artefact that reflects the way you understand your evaluation and the content - there is no predetermined format to use. Recollect the evaluation frameworks that you have seen in Week 5 and Week 6, and if any of these aligned with the way you think.</p>
+<p dir="ltr">Once you have created your artefact, share it on your blog with a reflection on the process of creating your evaluation plan. Your reflection should highlight your key learnings, any difficulties you faced, and any other considerations that you want to make regarding your evaluation plan.</p>
+
+<p><link href="http://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>

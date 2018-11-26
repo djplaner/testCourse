@@ -1,0 +1,411 @@
+<html>
+  <head>
+    <title>Week 13 - How might I improve my plan?</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="all">
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@prince-pdf { prince-pdf-page-layout: two-column-right }
+
+@page {
+  margin: 30mm 20mm 25mm 20mm;
+  size: 20cm 25cm;
+
+  @footnotes {
+    border-top: thin solid black; 
+    border-clip: 100px;
+    padding: 0;
+    margin: 0.6em 0 0 0;
+    margin-outside: -60mm;
+    padding: 0.3em 0 0 0;
+  }
+}
+
+@page :left {
+  margin-left: 80mm; 
+
+  @top-left {
+    font: 11pt "Lato", serif;
+    content: "From Wikibooks";
+    margin-left: -60mm;
+    white-space: nowrap; 
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-left-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-right: 60mm;
+  }
+}
+
+@page :right {
+  margin-right: 80mm; 
+
+  @top-right {
+    font: 11pt "Lato", serif;
+    content: string(title, first-except); 
+    white-space: nowrap; 
+    vertical-align: bottom;
+    margin-right: -60mm;
+    padding-bottom: 2em; 
+  }
+
+  @bottom-right-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-left: 60mm;
+  }
+}
+
+html, body, div, h1, h2, h3, p, blockquote, ul, ol, li, pre { 
+  margin: 0; padding: 0 }
+li { margin-left: 1.5em }
+
+p { padding-top: 1em }
+
+title { string-set: title content() }
+
+body { 
+  font: 11pt "PT Serif", serif;
+  text-align: justify;
+  hyphens: auto;
+  counter-reset: figure, table;
+}
+
+h1, h2, h3 { 
+  font: 2.5em "Roboto Condensed", serif;
+  margin: 1.2em 0 0.5em
+}
+
+h1 { margin: 0 0 1em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.2em }
+
+a { color: inherit }
+
+p.first { text-indent: 0 }
+
+h1,h2,h3,h4,h5,h6, tr { text-align: left; text-align: start; }
+
+table { border-collapse: collapse; counter-increment: table }
+table.top { float: top; margin-outside: -60mm; vertical-align: top; margin-bottom: 1em; }
+td, th { border: thin solid black; padding: 0.2em }
+table:after { content: "Table " counter(table); font-style: italic; padding: 0.5em 0; display: block }
+
+
+figure { 
+  width: 100%; 
+  margin: 0; 
+  counter-increment: figure;
+}
+
+figure img { width: 100% }
+
+.mw-headline-anchor { display: none }
+.mw-editsection { display: none }
+
+aside {
+  background: #fcc;
+  padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
+  font-style: italic;
+  font-family: Lato, "Roboto Condensed", sans-serif;
+  width: 75mm;
+  box-sizing: border-box;
+  float: outside;
+  margin-outside: -80mm;
+  text-align: inside;
+  hyphens: manual;
+}
+
+figure.sidenote {
+  width: 55mm;
+  float: outside;
+  margin-outside: -60mm;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+figcaption:before {
+  content: "Figure " counter(figure) ": ";
+  padding-right: 0.5em;
+}
+
+figure.top { float: top; margin-bottom: 2em; }
+figure.bottom { float: bottom; margin-top: 1em; }
+
+figure.sidecaption figcaption {
+  float: outside;
+  width: 55mm;
+  margin-outside: -60mm;
+}
+
+h1 { margin-outside: -60mm }
+
+figure.wide {
+  width: auto;
+  margin-outside: -60mm;
+}  
+
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+p.author { margin: 2em 0; font-variant: small-caps }
+
+
+/* footnotes */
+
+::footnote-call {
+  content: counter(footnote);
+  font-size: 83%;
+  vertical-align: super;
+  line-height: none
+}
+
+::footnote-marker {
+  content: counter(footnote);
+  list-style-position: inside;
+  font-size: 83%;
+  vertical-align: super;
+  margin: 0; padding: 0 0.3em 0 0;
+}
+
+.foot {
+  float: footnote;
+  font-size: 90%; font-variant: normal;
+  footnote-style-position: inside;
+  margin: 0; padding: 0; text-indent: 0;
+}
+
+@page {
+}
+@media screen {
+  body { margin: 10% 30% 10% 10% }
+  figure { width: 100% }
+  figure.sidecaption figcaption { width: 28%; float: right; margin-right: -30%; }
+  aside { float: none; width: auto; margin: 1em 0 }
+}
+
+
+</style>
+  </head>
+  <body>
+
+
+    <h1>Week 13 - How might I improve my plan?</h1>
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68357"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-fafa09ec-c027-ac75-9bfa-88f03a421566">The assumption is that by the start of this week you will have developed a draft of your grant application (<a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#b">Assignment 2, Part B</a>), which outlines your plan for your TISL process.  Meaning you have started to ponder this week’s driving question</p>
+<blockquote>How might I improve my plan?</blockquote>
+<p dir="ltr">The focus of this week is preparation for and participation in a Writers Workshop. A method of constructive and collaborative peer review that will provide some advice on how you can improve your plan.</p>
+<p dir="ltr">The rest of this learning path seeks to explain why and how the Writers Workshop will work.</p>
+<p dir="ltr">The remainder of the semester focuses on</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">(<a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=792200&amp;chapterid=65293#14">Week 14</a>) Evaluating and selecting which, if any, of the suggestions from the Writers Workshop for improving your plan you wish to implement; and</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">(<a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=792200&amp;chapterid=65293#15">Week 15</a>) Reflecting back on the course and working on your plans for on-going development as a master teacher.</p>
+</li>
+</ol>
+<p dir="ltr">If you have any questions about any of the following, please raise them on the <a href="https://usqstudydesk.usq.edu.au/m2/mod/forum/view.php?id=784373">Questions &amp; Discussion forum</a>, or contact the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=789352&amp;chapterid=65098">course examiner</a>.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. What about Kolb&#39;s cycle? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68358"></a>
+<h2>2. What about Kolb&#39;s cycle?</h2>
+
+<p>You may have noticed that the learning path for this week does not include the usual division into: Experiencing, Examining, Explaining, and Applying. As explained <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=784358&amp;chapterid=65299">earlier in the course</a> this structure was informed by the use of <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=798711&amp;chapterid=65795">Kolb&#39;s experiential cycle</a> as the theoretical model for designing the learning paths. i.e. Kolb&#39;s cycle provided theoretical guidance to help us design the learning activities and resources we hoped would help you learn.</p>
+
+<p>This week there is only one learning activity for you to engage in - the Writers&#39; Workshop.  The version of the Writers&#39; Workshop we are going to use already has a very specific design (explained later). Hence, there is no need for an additional layer of theoretical guidance.</p></div>
+
+ <!-- ******** Chapter:  3. Peer review **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68359"></a>
+<h2>3. Peer review</h2>
+<p dir="ltr" id="docs-internal-guid-4a420a18-c030-dc57-bacc-cf6cac743272">Peer review is a required, standard, and important part of life as a tertiary educator. While commonly understood to form part of research practices, it is is also an essential component of teaching.  </p>
+<p dir="ltr">The proposed <a href="http://uniteachingcriteria.edu.au/">Australian University Teaching Criteria</a> mentioned in <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824506&amp;chapterid=67923">the previous learning path</a> includes “peer review” as a key part of the 4 of the 7 criteria, including: <a href="http://uniteachingcriteria.edu.au/framework/indicative-criteria/indicative-standards-criteria/standards-criteria-criterion-1/">Design and planning of learning activities</a>; <a href="http://uniteachingcriteria.edu.au/framework/indicative-criteria/indicative-standards-criteria/standards-criteria-criterion-2-2/">Teaching and supporting student learning</a>; <a href="http://uniteachingcriteria.edu.au/framework/indicative-criteria/indicative-standards-criteria/standards-criteria-criterion-5/">Integration of scholarship, research and professional activities with teaching and in support of learning</a>; and, <a href="http://uniteachingcriteria.edu.au/framework/indicative-criteria/indicative-standards-criteria/standards-criteria-criterion-6/">Evaluation of practice and continuing professional development</a>.  </p>
+<p dir="ltr">The practice of peer review of teaching is also increasingly being seen <a href="https://www.campusreview.com.au/2017/03/opinion-is-it-time-to-retire-student-experience-surveys-in-universities/">as an important and essential complement</a> to the potential over-reliance on student experience surveys in judging the quality of teaching (Klopper and Drew, 2015).  </p>
+<p dir="ltr">The ability for teaching and its outputs to be peer reviewed is a key requirement for teaching practice to be considered an example of the scholarship of teaching (Paulsen, 2001).</p>
+<p dir="ltr">Peer review is important and the Writers Workshop process provides one collaborative and constructive means to generating peer review of writing. It is a process at least one of the teaching team has used to great success.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  4. Writers&#39; Workshops - Origins &amp; Purpose **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68360"></a>
+<h2>4. Writers&#39; Workshops - Origins &amp; Purpose</h2>
+<p dir="ltr" id="docs-internal-guid-c36fb690-c032-788e-32bb-50adedb1b938">The approach to Writers’ Workshops adopted in this course is informed by work in the Object-Orientated Programming (OOP) patterns community, which is in turn informed by work from creative writing. Richard Gabriel - one of the important contributors to the OOP patterns community’s use of writers workshop - traces the origins of this form of writers workshop to the “end of the nineteenth century at the University of Iowa” (Gabriel, 2002, p. 1) and that institution’s creative writing program known as the <a href="https://en.wikipedia.org/wiki/Iowa_Writers%27_Workshop">Iowa Writers’ Workshop</a>. Gabriel (2002) explains that the</p>
+<blockquote>fundamental approach used by the writers’ workshop is not limited to writing, drawings, and designs, but can be applied—and has been applied—to anything that people make: software, patterns, pattern languages, organizations, presentations, brochures, marketing campaigns, business plans, companies, plays, performances,music, conference plans, food, interior decoration, landscaping, hairstyles, perfume choices, and on and on. The writers’ workshop brings together people who make things and the things they have made in a way that enables effective criticism and suggestions for improvement while maintaining an atmosphere in which the individual is not harmed by the experience of people criticizing the work. (pp. 1-2)</blockquote>
+<p dir="ltr">The aim and hope for this course is that the writers’ workshop approach provides such an atmosphere for your plan.</p></div>
+
+ <!-- ******** Chapter:  5. Where, when and who? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68361"></a>
+<h2>5. Where, when and who?</h2>
+<h4 dir="ltr" id="docs-internal-guid-46c4f8b4-c033-cc3c-cff9-1b8e24f1542a">Where and when?</h4>
+<p dir="ltr">The 2017 EDU8702 writers’ workshop will - given the geographic distribution of course participants - take place in <a href="https://usq.zoom.us/j/132857269">this Zoom room</a> at a time and date to be decided. It is expected that the workshop will not last much more than 1 hour.</p>
+<p dir="ltr">You will be expected to submit a draft of your L&amp;T grant application 2 days before the scheduled time and date for the writers’ workshop. You will also be expected to read the draft applications from other contributors prior to the workshop.</p>
+<h4 dir="ltr">Who?</h4>
+<p dir="ltr">Participants in the 2017 EDU8702 writers’ workshop will include all of the course participants (students and staff). The following table summarises the different roles that workshop participants will be expected to play during the workshop.</p>
+
+<p></p>
+
+
+<div dir="ltr">
+<table class="dj_table">
+<tbody>
+<tr class="dj_table_header"><th>
+<p dir="ltr">Role</p>
+</th><th>
+<p dir="ltr">Who</p>
+</th></tr>
+<tr class="table_row">
+<td>
+<p dir="ltr">Author</p>
+</td>
+<td>
+<p dir="ltr">People who have a draft L&amp;T grant application to share with the workshop for peer review. All students are expected to play this role.</p>
+</td>
+</tr>
+<tr class="table_alt_row">
+<td>
+<p dir="ltr">Reviewer</p>
+</td>
+<td>
+<p dir="ltr">People who will share what they liked and their suggestions for improvements on the draft grant applications. All staff will play this role. Students will play this role for applications from other students.</p>
+</td>
+</tr>
+<tr class="table_row">
+<td>
+<p dir="ltr">Moderator</p>
+</td>
+<td>
+<p dir="ltr">Guides the workshop and ensures all rules are followed. The course examiner will play this role.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  6. How will it work? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68362"></a>
+<h2>6. How will it work?</h2>
+<p dir="ltr" id="docs-internal-guid-8cec7d76-c036-46ca-dc2b-abd6d8c55fb3">The EDU8702 Writers’ Workshop will follow the structure and practices used by the OOP community’s writers’ workshops. The following explanation is adapted from <a href="http://www.cs.wustl.edu/~schmidt/writersworkshop.html">this web page</a> and offers a broad overview of the process.  After some initial scene setting by the moderator, the following process will be repeated for each draft grant application.</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">The author of a paper reads a small section of his/her choice from the application. <br class="kix-line-break">The goal is to let the author express what he or she feels is particularly important about the application, as well as to give participants a chance to get to know the author a bit.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">One or two reviewers briefly summarize the application from their personal viewpoint. <br class="kix-line-break">The goal is to identify what the reviewer(s) thought were the key points of the application. Since the other participants should already have read the work, the summaries should be concise. In particular, it&#39;s best to avoid debating any inconsistencies between different reviewer&#39;s interpretations of the application at this point.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">The group then discusses what they liked about the application, first in terms of content and then in terms of style. <br class="kix-line-break">The goal is to identify and praise the strengths of the work.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">After presenting the positive aspects of the application, the group discusses how to improve the content and style of the application. <br class="kix-line-break">The goal here is <em>not</em> to criticise the application per se, but rather to give the author constructive suggestions on how to make the application better. In general, the style for critical comments is to first state the problem followed by a suggestion on how to solve the problem.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">After this discussion, the author of the application may ask questions of the reviewers to clarify their statements. <br class="kix-line-break">The goal is to give the author a chance to better understand certain comments, rather than to defend the application.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">The author is applauded and thanked for their contribution.<br class="kix-line-break">The goal here is <a href="https://sites.google.com/a/gertrudandcope.com/info/Publications/Patterns/WritersWorkshop#ThankTheAuthor">to express gratitude</a> to the author for their contribution.</p>
+</li>
+</ol>
+<p dir="ltr">Refer to this <a href="https://sites.google.com/a/gertrudandcope.com/info/Publications/Patterns/WritersWorkshop">Writers’ Workshop pattern language</a> (Coplien, 1997) for a more detailed overview of the Writers’ Workshop, each of its stages, and the rationale for each.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  7. What do you need to do? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch68363"></a>
+<h2>7. What do you need to do?</h2>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Share your preferences for times and dates for the writers’ workshop.<br class="kix-line-break">Do this by emailing <a href="mailto:david.jones@usq.edu.au">the course examiner</a> with a list of times and dates you are available between the 5th and 15th of October.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Accept the appointment to participate in the writers’ workshop.<br class="kix-line-break">The course examiner will extend this via email and provide details of the URL for the Zoom room for the writer’s workshop and all related due dates.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Provide a draft of your L&amp;T grant application (Assignment 2, Part B) by the specified due date.<br class="kix-line-break">This date will be 2 days prior to the writers’ workshop.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Read the provided draft L&amp;T grant applications from other writer(s) before the writers’ workshop.<br class="kix-line-break">These will be provided 2 days prior to the writers’ workshop.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Participate collaboratively and constructively in the writers’ workshop as outlined above.<br class="kix-line-break">Lasting not much more than an hour on the specified time.</p>
+</li>
+</ol>
+
+<p>After the writers’ workshop you are encouraged to consider making <a href="http://wiki.c2.com/?SelectiveChanges">Selective Changes</a> to your application based on your experience. All of <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=792200&amp;chapterid=65293#14">week 14</a> is set aside for you to engage in this activity.<link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>

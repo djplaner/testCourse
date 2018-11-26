@@ -1,0 +1,1045 @@
+<html>
+  <head>
+    <title>Week 9 - How am I going to answer my research question?</title>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="all">
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@prince-pdf { prince-pdf-page-layout: two-column-right }
+
+@page {
+  margin: 30mm 20mm 25mm 20mm;
+  size: 20cm 25cm;
+
+  @footnotes {
+    border-top: thin solid black; 
+    border-clip: 100px;
+    padding: 0;
+    margin: 0.6em 0 0 0;
+    margin-outside: -60mm;
+    padding: 0.3em 0 0 0;
+  }
+}
+
+@page :left {
+  margin-left: 80mm; 
+
+  @top-left {
+    font: 11pt "Lato", serif;
+    content: "From Wikibooks";
+    margin-left: -60mm;
+    white-space: nowrap; 
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-left-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-right: 60mm;
+  }
+}
+
+@page :right {
+  margin-right: 80mm; 
+
+  @top-right {
+    font: 11pt "Lato", serif;
+    content: string(title, first-except); 
+    white-space: nowrap; 
+    vertical-align: bottom;
+    margin-right: -60mm;
+    padding-bottom: 2em; 
+  }
+
+  @bottom-right-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-left: 60mm;
+  }
+}
+
+html, body, div, h1, h2, h3, p, blockquote, ul, ol, li, pre { 
+  margin: 0; padding: 0 }
+li { margin-left: 1.5em }
+
+title { string-set: title content() }
+
+body { 
+  font: 11pt "PT Serif", serif;
+  text-align: justify;
+  hyphens: auto;
+  counter-reset: figure, table;
+}
+
+h1, h2, h3 { 
+  font: 2.5em "Roboto Condensed", serif;
+  margin: 1.2em 0 0.5em
+}
+
+h1 { margin: 0 0 1em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.2em }
+
+a { color: inherit }
+
+p + p, aside + p { text-indent: 1.4em }
+p.first { text-indent: 0 }
+
+h1,h2,h3,h4,h5,h6, tr { text-align: left; text-align: start; }
+
+table { border-collapse: collapse; counter-increment: table }
+table.top { float: top; margin-outside: -60mm; vertical-align: top; margin-bottom: 1em; }
+td, th { border: thin solid black; padding: 0.2em }
+table:after { content: "Table " counter(table); font-style: italic; padding: 0.5em 0; display: block }
+
+
+figure { 
+  width: 100%; 
+  margin: 0; 
+  counter-increment: figure;
+}
+
+figure img { width: 100% }
+
+.mw-headline-anchor { display: none }
+.mw-editsection { display: none }
+
+aside {
+  background: #fcc;
+  padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
+  font-style: italic;
+  font-family: Lato, "Roboto Condensed", sans-serif;
+  width: 75mm;
+  box-sizing: border-box;
+  float: outside;
+  margin-outside: -80mm;
+  text-align: inside;
+  hyphens: manual;
+}
+
+figure.sidenote {
+  width: 55mm;
+  float: outside;
+  margin-outside: -60mm;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+figcaption:before {
+  content: "Figure " counter(figure) ": ";
+  padding-right: 0.5em;
+}
+
+figure.top { float: top; margin-bottom: 2em; }
+figure.bottom { float: bottom; margin-top: 1em; }
+
+figure.sidecaption figcaption {
+  float: outside;
+  width: 55mm;
+  margin-outside: -60mm;
+}
+
+h1 { margin-outside: -60mm }
+
+figure.wide {
+  width: auto;
+  margin-outside: -60mm;
+}  
+
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+p.author { margin: 2em 0; font-variant: small-caps }
+
+
+/* footnotes */
+
+::footnote-call {
+  content: counter(footnote);
+  font-size: 83%;
+  vertical-align: super;
+  line-height: none
+}
+
+::footnote-marker {
+  content: counter(footnote);
+  list-style-position: inside;
+  font-size: 83%;
+  vertical-align: super;
+  margin: 0; padding: 0 0.3em 0 0;
+}
+
+.foot {
+  float: footnote;
+  font-size: 90%; font-variant: normal;
+  footnote-style-position: inside;
+  margin: 0; padding: 0; text-indent: 0;
+}
+
+@page {
+}
+@media screen {
+  body { margin: 10% 30% 10% 10% }
+  figure { width: 100% }
+  figure.sidecaption figcaption { width: 28%; float: right; margin-right: -30%; }
+  aside { float: none; width: auto; margin: 1em 0 }
+}
+
+
+</style>
+  </head>
+  <body>
+
+
+<h1 id="experiencing">Grant applications: Why, what and some examples</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> Experiencing - <a href="#experiencing">Grant applications: Why, what and some examples</a> </li>
+  <li> Examining - <a href="#examining">Making judgements about an example application</a> </li>
+  <li> Explaining - <a href="#explaining">Components and characteristics of effective L&T grant applications</a> </li>
+  <li> Applying - <a href="#applying">Developing your L&T grant application</a> </li>
+</ol>
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67922"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-37071978-8e89-b0f7-d878-7229d70d585a"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156">Assignment 2, Part B</a> asks you to develop a learning and teaching grant application. The grant application that you write (as a blog post titled “How do I plan to implement and evaluate my chosen emerging practice?”) will be your answer to this week’s driving question</p>
+<blockquote>How do I plan to implement and evaluate my chosen emerging practice?</blockquote>
+<p dir="ltr">i.e. the grant application is a description of your plan for your Teacher Inquiry into Student Learning. Consequently it is the artefact in which you bring together all of what you’ve been working on for this semester. It will include content describing almost all of the steps in the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=798714">integrated model of TISL</a> (Emin-martínez et al., 2014) we’re using in this course.</p>
+<p dir="ltr">For the pragmatic minded, the grant application (your artefact for <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#b">Assignment 2, Part B</a>) is worth 30% of your final mark for this course.</p></div>
+
+ <!-- ******** Chapter:  2. Why an L&amp;T grant? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67923"></a>
+<h2>2. Why an L&amp;T grant?</h2>
+<p dir="ltr" id="docs-internal-guid-a34b91d9-8e8a-f675-8ad5-e8b649b0a3f5">In short, because it is an authentic activity expected of a tertiary educator (so getting some practice now is a good idea) and it provides an effective way of documenting planning of your TISL.</p>
+<h4 dir="ltr">An expectation of a tertiary educator</h4>
+<p dir="ltr">Applying for learning and teaching grants is increasingly an expectation of tertiary educators. <a href="http://uniteachingcriteria.edu.au/">This web site</a> was produced by an Australian Government funded project (Chalmers et al., 2014) that sought to develop criteria and standards for teaching in Australian universities. The fifth of the criteria developed by that project is <a href="http://uniteachingcriteria.edu.au/framework/indicative-criteria/indicative-standards-criteria/standards-criteria-criterion-5/">Integration of scholarship, research and professional activities with teaching and in support of learning</a>. A criteria that directly connects with the purpose of this course and of the practice of TISL. The project developed standards for each of the levels at which an Australian tertiary educator would be employed (Level A, B, C, D and E). The Level B standards include</p>
+<blockquote>Applications for teaching grants that have a clear theoretical and scholarly basis (successful or unsuccessful)</blockquote>
+<p dir="ltr">From there the focus turns to</p>
+<blockquote>Successful application for awards, grants or competitive funding related to teaching and learning (as an individual or team member/leader)</blockquote>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. Example Australian University L&amp;T grant schemes **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67924"></a>
+<h2>3. Example Australian University L&amp;T grant schemes</h2>
+<p dir="ltr" id="docs-internal-guid-9aacc11c-8e8b-e32a-bd09-8a84b3dd2c2f">The following is a list of L&amp;T grant schemes found on the websites of Australian Universities. This list is provided here both to reinforce the importance of this practice to the Australian tertiary education sector, and to provide you with some examples of current practice.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">University of Southern Queensland’s <a href="http://bit.ly/usqstaff">Learning and Teaching Scholarships</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Macquarie University’s <a href="https://staff.mq.edu.au/teach/grants-awards-and-recognition/grants-in-teaching">Grants in Teaching</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Griffith University’s <a href="https://www.griffith.edu.au/learning-teaching/awards-grants/grants">Learning and Teaching Grants</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">University of Wollongong’s <a href="http://www.uow.edu.au/dvca/ltc/teachdev/esdf/index.html">Educational Strategies Development Fund</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">University of Tasmania’s <a href="http://www.teaching-learning.utas.edu.au/awards-and-grants/national-and-other-awards/utas-teaching-development-grants">Teaching Development Grants</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">James Cook University’s <a href="https://www.jcu.edu.au/learning-and-teaching/awards-grants/grants/jcu-learning-and-teaching-grants">Learning and Teaching Grants</a>.</p>
+</li>
+</ul>
+<h4 dir="ltr">National grant schemes</h4>
+<p dir="ltr">Up until 2016 the Australian Government funded national learning and teaching grants through the Office for Learning and Teaching and various related bodies. While these are no longer available, it is possible to view projects that were funded via <a href="http://www.olt.gov.au/list-projects">this portal</a>.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  4. Example L&amp;T projects **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67925"></a>
+<h2>4. Example L&amp;T projects</h2>
+<p dir="ltr" id="docs-internal-guid-1dd869d0-8e8c-836f-f0fa-ba59c8872340">Before you dive into learning about and starting to prepare your L&amp;T grant application (Assignment 2, Part B) let’s start by examining some example L&amp;T projects. i.e. rather than look at grant applications, you’re going to look at information about and resources generated by L&amp;T projects. Both national and institutional projects.  </p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>OLT grants</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Visit the OLT projects list portal and either browse through the available projects, search for specific topics (e.g. <a href="http://www.olt.gov.au/list-projects?text=retention">retention</a>) or look for applications in your discipline (e.g. <a href="http://www.olt.gov.au/list-projects?text=music">music</a>, <a href="http://www.olt.gov.au/list-projects?text=psychology">psychology</a>, <a href="http://www.olt.gov.au/list-projects?text=staff+development">staff development</a>, computer science)</p>
+<p dir="ltr">In browsing the projects that interest you, think about the following:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Are there projects connected to your context and/or discipline?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are there projects touching on topics related to the research question you developed <a href="https://usqstudydesk.usq.edu.au/m2/course/view.php?id=9664&amp;section=8#startweek">in Week 7</a>?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">For projects that you find, consider the following questions.<br class="kix-line-break">What problems are they focused on? What outcomes did they generate? Do they provide pointers to people, ideas, publications, resources (e.g. <a href="http://musiclistening.net/">music listening</a>) and communities that may inform process for becoming aware of emerging practice?</p>
+</li>
+</ul>
+</div>
+</div>
+<h4 dir="ltr">Institutional L&amp;T grants</h4>
+<p dir="ltr">The projects on the OLT portal are large, multi-institutional, national-level projects. Quite a bit beyond the type of project expected in this course. The expectation is that your L&amp;T grant application would have more in common with an application of an institutional grant scheme. <a href="http://www.curtin.edu.au/cli/awards_and_grants/teaching_learning_grants.cfm">This page</a> from Curtin University provides a list funded applications from Curtin’s 2017 Learning and Teaching Grants scheme.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Looking at institutional grants</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Take a look through the list of projects <a href="http://www.curtin.edu.au/cli/awards_and_grants/teaching_learning_grants.cfm">funded by Curtin in 2017</a> and</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Examine the project titles to get a feel for the types of topics.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Look at the spread of disciplines (indicate by the faculty column).</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Identify the priorities Curtin University were looking to fund.</p>
+</li>
+</ul>
+<p dir="ltr">Do any of these titles, disciplines, or priorities link to your research question?  Pick one that interests and see if you can find any related resources or connections that might inform your TISL project.</p>
+<p dir="ltr">For example, the project titled “Mastery or avoidance? Student reactions to learning analytic messages” was of interest to me. A quick Google search and following some links led me to<a href="http://elearning-analytics.com/"> this website</a> from the project team and a number of publications that are connected to a project of mine.</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  5. Example grant applications **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67926"></a>
+<h2>5. Example grant applications</h2>
+<p dir="ltr" id="docs-internal-guid-7dc134d4-8e8e-c2e8-77fa-3e4537264d0a">Finally for this section, time to look at some example grant applications. The aim being to get a feel for the types of information that is requested, how it is written up, and also to start developing an idea of what has been done. Applications for L&amp;T grants are typically not something that is publicly available. Hence we’re restricted here to example applications or applications from the teaching team.</p>
+<p dir="ltr"><strong>None</strong> of the following example grant applications are intended to act as exemplar applications. Later in the learning path you will engage with advice and suggestions about how to generate good L&amp;T grant applications.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Analysing a grant application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Pick one of the following example grant applications</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxZkJuUDgxb3djNGM/view?usp=sharing">Using a group feedback approach to enhance evaluation of undergraduate clinical teaching<br class="kix-line-break"></a>An example small project application from the University of London. The content of this application is potentially at a slightly lower level than expected by a very good submission for Assignment 2, Part B.<br class="kix-line-break"><br class="kix-line-break"></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxR2Y0S1hUbndIYVU/view?usp=sharing">The example application for USQ L&amp;T Staff Scholarships</a>.<br class="kix-line-break">A broadly indicative (pretend) example application provided to potential applicants for the USQ L&amp;T Staff Scholarships to demonstrate expectations.  The broad idea is one being actively considered by some disciplines at USQ.  Again, perhaps at a slightly lower level than what is expected for Assignment 2, Part B.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxZDlpejdxd3NiQVU/view?usp=sharing">The seamless integration of Web3D technologies with university curricula to engage the changing student cohort</a>. <br class="kix-line-break">A successful application for OLT funding with which the author of this learning path was somewhat involved. As a national application this application is aimed at a broader level and perhaps errs on too much detailed information for the requirements of Assignment 2, Part B.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxMVpOSWxJYjFYMjg/view?usp=sharing">Enabling academics to apply learning analytics to individual pedagogical practice: how and with impacts</a>?<br class="kix-line-break">An unsuccessful application for OLT funding by the author of this learning path. At a broader scale and detail than required for Assignment 2, Part B.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxc0hwMWdiN3YzeEE/view?usp=sharing">Enabling and analysing cross-institutional patterns in learning analytics: A foundation for research and action</a> <br class="kix-line-break">A successful application for an internal research grant scheme from the USQ Faculty of Education in which the author of this learning path was involved. (First three pages are administrative template, start reading at page 4).  Not really a L&amp;T grant application, but was starting to lay the foundation for the national application above.</p>
+</li>
+</ul>
+<p dir="ltr">Skim through the grant application you have chosen and highlight examples of the major components of the application you will need to write, including:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Aims;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Context;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Outcomes;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Rationale;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Impact;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Evaluation</p>
+</li>
+</ul>
+<p dir="ltr">We’ll revisit this in more detail next.</p>
+</div>
+</div>
+
+<h1 id="examining">Making judgements about an example application</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> Experiencing - <a href="#experiencing">Grant applications: Why, what and some examples</a> </li>
+  <li> Examining - <a href="#examining">Making judgements about an example application</a> </li>
+  <li> Explaining - <a href="#explaining">Components and characteristics of effective L&T grant applications</a> </li>
+  <li> Applying - <a href="#applying">Developing your L&T grant application</a> </li>
+</ol>
+
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67927"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-8e91-e8b3-ca35-d72bf3cb85e8">The previous section of this learning path introduced you to some examples of L&amp;T grant applications and asked you to start looking at what they included. The following activity is intended to help you examine an example application in more detail and at the same time become more familiar with the rubric that will be used to judge the L&amp;T grant application that you will write for Assignment, Part B.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Judge an example application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Open up the example application you chose in <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824506&amp;chapterid=67926">the last activity</a> and open <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxVEpWamhIcXYyT0U/view?usp=sharing">this Word document</a> containing a copy of the rubric for <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#b">Assignment 2, Part B</a>. Use the rubric to examine and make a judgement about the example application. To do this, it is suggested that you:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Iterate through each of the criteria on the rubric. <br class="kix-line-break">e.g. L&amp;T grant application: context; L&amp;T grant application: literature review etc) one by one</p>
+</li>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Iterate through each of the standards descriptors for that criterion one by one<br class="kix-line-break">E.g. The context criterion has two standards descriptors. One associated with a description of the context, and the other associated with the problem/reason.</p>
+</li>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Highlight the standards descriptor that best captures what you see in the application.</p>
+</li>
+</ol></ol></ol>
+<p dir="ltr">(Note: None of the example applications were written with this rubric in mind. Some of the example applications you might have chosen were designed for different purposes. Hence, it should be no surprise if your application scores quite poorly. However, the structure and rubric used for the application you will write for this course is based on common practice. Meaning there should be some good connections).</p>
+<p dir="ltr">If you are uncertain about any of the standards descriptors, then please do ask a question in the <a href="https://usqstudydesk.usq.edu.au/m2/mod/forum/view.php?id=784373">Questions and discussion forum</a> (or by other means).</p>
+<p dir="ltr">You may also find it useful to share your final judgement on the application using <a href="https://usqstudydesk.usq.edu.au/m2/mod/forum/view.php?id=784373">the same forum</a>. This would provide an opportunity for one of the other participants in the course (student, or teaching team) to comment and discuss your judgement.</p>
+</div>
+</div>
+
+<h1 id="explaining">Components and characteristics of effective L&T grant applications</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> Experiencing - <a href="#experiencing">Grant applications: Why, what and some examples</a> </li>
+  <li> Examining - <a href="#examining">Making judgements about an example application</a> </li>
+  <li> Explaining - <a href="#explaining">Components and characteristics of effective L&T grant applications</a> </li>
+  <li> Applying - <a href="#applying">Developing your L&T grant application</a> </li>
+</ol>
+
+
+
+
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67928"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-8e95-694d-01c1-b92267f80a60">So far, this learning path has asked you to examine some example L&amp;T grant applications and examine some of the projects funded by recent and current L&amp;T grant schemes. You’ve also been asked to use the rubric by which your grant application (Assignment 2, Part B) will be judged to evaluate an example L&amp;T grant application. Consequently, you have started to develop some appreciation for the expectations of your L&amp;T grant application.</p>
+<p dir="ltr">This section of the learning path seeks to help you figure out how to meet those expectations. It offers:</p>
+<ul>
+<li dir="ltr">An overview and mapping of the components of a L&amp;T grant application against the integrated TISL model and the activities in this course.</li>
+<li dir="ltr">A brief overview of what makes for a good L&amp;T grant application.</li>
+<li dir="ltr">A short reading providing some tips on writing an L&amp;T grant application.</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Components of the EDU8702 L&amp;T grant application **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67929"></a>
+<h2>2. Components of the EDU8702 L&amp;T grant application</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-8e97-00ba-7a06-481a7ce29b79">A closer look at the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824506&amp;chapterid=67926">example L&amp;T grant applications</a> provided earlier in this learning path and the L&amp;T grants schemes run by other universities will reveal some variability in terms of the components that make up an L&amp;T grant application. However, there is some similarity, especially in Australia through the influence of the OLT grants scheme. The components of <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxWkxSQmRyMDBkRUk/view?usp=sharing">the EDU8702 L&amp;T grant application template</a> are informed by the OLT grants scheme and slightly modified for the purposes for the course (e.g. there is no explicit mention of dissemination, a major concern of the OLT grants scheme) and the nature of TISL.</p>
+<p dir="ltr">The following table provides an overview of the components of <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxWkxSQmRyMDBkRUk/view?usp=sharing">the EDU8702 L&amp;T grant application template</a>, offers a brief description of each component, and maps the component against <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=798714">the integrated TISL model</a> being used in this course. The following sections offer an expanded explanation of the major components and offer some questions to ask yourself about these components.</p>
+<p dir="ltr"></p>
+<table class="dj_table">
+<tbody>
+<tr class="dj_table_header"><th>Components</th><th>Matching TISL Stage</th><th>Description</th></tr>
+<tr class="table_row">
+<td>Applicant name</td>
+<td>no match</td>
+<td>Your name
+<p style="font-size: smaller;">(A couple of easy components to start)</p>
+</td>
+</tr>
+<tr class="table_alt_row">
+<td>Project title</td>
+<td>no match</td>
+<td>1 sentence title for project</td>
+</tr>
+<tr class="table_row">
+<td>Abstract</td>
+<td>no match</td>
+<td>Summarise in plain English the project its need, aims and approach, significance, methods, and expected outcomes.<br><br></td>
+</tr>
+<tr class="table_alt_row">
+<td><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67930">Context</a></td>
+<td>TISL #1 - Initiation <br> TISL #2 - Context analysis or investigation</td>
+<td>Description of the relevant aspects of the L&amp;T context within which the <br>project will take place.</td>
+</tr>
+<tr class="table_row">
+<td><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67931">Aims</a></td>
+<td>TISL #3 - Formulation of the design <br>objective &amp; research question</td>
+<td>Description of what the project is aiming to achieve.</td>
+</tr>
+<tr class="table_alt_row">
+<td><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67933">Rationale</a></td>
+<td>Considerations arising from a number of the TISL stages.</td>
+<td>What is the problem? Why is it important? What is the solution you will implement? How is it linked to prior experience, literature, and theory?</td>
+</tr>
+<tr class="table_row">
+<td><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67934">Approach</a></td>
+<td>TISL #4 - Design of method to achieve the learning objective and to answer the research question<br> TISL #5 - Enactment (or at least explains what you&#39;ll do in this stage)</td>
+<td>A description of the steps, activities, timelines and methods you will use to implement the chosen solutions</td>
+</tr>
+<tr class="table_alt_row">
+<td><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67932">Outcomes &amp; impact</a></td>
+<td>no match</td>
+<td>What are the deliverables, changes and  benefits the project will bring about?</td>
+</tr>
+<tr class="table_row">
+<td><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67935">Evaluation</a></td>
+<td>TISL #6 - Evaluation</td>
+<td>A description of the process, activities, methods and reasons behind how you will measure the quality of the outcomes &amp; impact of your project.</td>
+</tr>
+</tbody>
+</table>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  2.1. Context **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67930"></a>
+<h3>2.1. Context</h3>
+<p dir="ltr" id="docs-internal-guid-4052d016-8eb3-4361-62fa-2491c1429179">The TISL process starts “when a teacher first identifies the issues related to student learning in which s/he is interested” (Hansen &amp; Wasson, 2016, p. 39). An issue that arises within a specific context. Once initiated, the integrated TISL model proposed by Emin-Martinez et al (2014) then requires an analysis and investigation of that context to reveal the assumptions and the constraints in play about the issue. The context section of the EDU8702 grant application template is provided for you to clearly and succinctly define the context within which your TISL process will take place.</p>
+<p dir="ltr">Emin-Martinez et al (2014) link this to the learning design process, which</p>
+<blockquote>typically begins by describing the learning context, the aims of learners, teachers and institutions, the resources at their disposal and the constraints under which they operate. (p. 2)</blockquote>
+<p dir="ltr">Later, Emin-Martinez et al (2014) identify four types of constraints that might be present within a given context.</p>
+<blockquote>domain constraints (e.g., didactical constraints, availability and/ or adaptability of existing resources), pedagogical constraints (e.g., class size, audience characteristics, roles, type of grouping), situational constraints (e.g., location, schedule, duration, tools and services available, face-to-face or hybrid), and economical or administrative constraints (e.g., financial, organizational, political) (p. 5)</blockquote>
+<p dir="ltr">Given that the context defines that space within which your TISL process takes place, it is essential that all other elements of your application are appropriate to that context.  As indicated by the following standard descriptors from the Assignment 2, Part B rubric (emphasis added).</p>
+<p dir="ltr">The quality of the literature is appropriate, i.e. it is evidence-based, and it is appropriate to the context, or explains/justifies any contextual mismatch</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Building your draft L&amp;T application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">This exercise is the first of many exercises that will ask you to start developing an early draft grant application by drawing on work you completed earlier in this learning path. First, you should download a copy of <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxWkxSQmRyMDBkRUk/view?usp=sharing">the EDU8702 L&amp;T grant application template</a> and save it on your computer. You will revisit this work in the Apply section of this learning path.</p>
+<p dir="ltr">In the week 7 learning path <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=816707&amp;chapterid=66828">you were asked</a> to provide some information about the context of your TISL process in a TISL planning document. In theory, you should be able copy and paste your response to that task into the context section of your draft application.</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  2.2. Aims **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67931"></a>
+<h3>2.2. Aims</h3>
+<p dir="ltr" id="docs-internal-guid-f1f95fd4-8eb4-a3ba-2cb7-6d30073dd3e6">The aims of your project are related with the outcomes/impact of your project. The aims of your project should encapsulate the overall intention of your project. The Web3D grant application (one of the examples from earlier in the learning path) has the following explicit aim</p>
+<blockquote>The project aims to increase knowledge about the usability, usefulness and effectiveness of 3D immersive web based environments (Web3D technologies) within the higher education sector which is becoming populated by diverse groups of students who will be increasingly familiar with emerging interactive 3D technologies.</blockquote>
+<p dir="ltr">A specific aim of a TISL process is the answering of an identified research question of direct interest to the teacher and appropriate to the context. Your research question should form part of your aims.</p>
+<p dir="ltr">Given the focus on TISL on improving student learning, the aims of a TISL project should explicitly include aims connected to improving some element of student learning, or perhaps the student learning experience.</p>
+<p dir="ltr">The standards descriptors from the Assignment 2, Part B rubric include the following</p>
+<blockquote>The questions, aims, outcomes, and impact are clearly identified, appropriate to the context and application, and provide clear alignment across all components. <br class="kix-line-break"><br class="kix-line-break">The research question is clearly defined, important, and justified. Overall, these components have a solid foundation in the literature and context while enabling clear and manageable project activities.</blockquote>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Continue building your draft application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">To continue building your draft application, copy answers to the following questions into the <em>Aims</em> section.</p>
+<ul>
+<li dir="ltr">After completing <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=816707&amp;chapterid=66832">this activity,</a> what is the research question that you&#39;ve finalised for your TISL process?</li>
+<li dir="ltr">What will be the big picture change to your practice, or more importantly to student learning or the student learning experience as a result of your TISL process?</li>
+</ul>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  2.3. Outcomes and impact **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67932"></a>
+<h3>2.3. Outcomes and impact</h3>
+<p dir="ltr" id="docs-internal-guid-93a2dd75-8ebd-0e09-40ac-63c534cf616a">While aims capture the overall intent of the application. The outcomes are the specific measurable objectives of the project including both the production of project materials and expected benefits (especially for student learning).</p>
+<p dir="ltr">Note: Just in case you come across it, more recent work on OLT grants (e.g. <a href="http://www.worldclasseducation.uwa.edu.au/__data/assets/file/0005/2619536/Impact-slides-Perth-6-Oct-2014WAND-sharing-day-visit.pdf">this</a>) made a fine distinction between the following terms</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Deliverable/output = a product or resource</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Outcome = a change or benefit that the project is designed to bring about, preferably described in a form that is measurable or for which evidence can be provided. An outcome happens during the project.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Impact = all changes or benefits that happen during and after the project.</p>
+</li>
+</ul>
+<p dir="ltr">For the purpose, of EDU8702 we will use the term outcome to cover all of these terms.</p>
+<p dir="ltr">For example, the Web 3D application mentioned on the last page includes the following</p>
+<blockquote>
+<p dir="ltr">The project aims to produce the following outcomes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">a suite of exemplars, open source rapid-development Web3D e-Learning focused tools, guidelines and insights for the successful adoption of Web3D technologies for mainstream use within curricula;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">create an Australian community of practice for Web3D e-Learning training support and research as an annex to the international Web3D consortium.</p>
+</li>
+</ul>
+<p dir="ltr">These outcomes will empower educators to create their own games, simulations and immersive 3D environments through the use of Web3D technologies and enhance student engagement through authentic learning activities within discipline curricula.</p>
+</blockquote>
+<p dir="ltr">The above suggests that the proposed outcomes of this project includes both: deliverables, products or resources (e.g. a suite of exemplars and a community of practice); and, expected benefits (e.g. empowering educators to create their own games etc, and enhancing student engagement).</p>
+<p dir="ltr">The rubric for Assignment 2, Part B includes the following descriptors</p>
+<blockquote>The questions, aims, outcomes, and impact are clearly identified, appropriate to the context and application, and provide clear alignment across all components. The components are clearly identified and linked with the literature that is appropriate for the context. The research question is clearly defined, important, and justified. Overall, these components have a solid foundation in the literature and context while enabling clear and manageable project activities.</blockquote>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Building your draft application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Using your draft application fill in the outcomes &amp; impact component by answering the following questions.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What new practices, technologies, resources etc will be generated by your TISL process?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What will be different as a result of your project?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What enhanced learning behaviours or outcomes will your students demonstrate?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What knowledge and skills do you expect to gain?</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  2.4. Rationale **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67933"></a>
+<h3>2.4. Rationale</h3>
+<p dir="ltr" id="docs-internal-guid-2721064c-8ebf-1542-aed2-e54ad5effe0b">The rationale component of your application should clearly establish: the nature of the issue or challenge being addressed; the importance and relevance of the issue; a description of the solution; and, clear linkages between each of these and prior experience, literature and theory. The rationale will expand upon and connect earlier writing (e.g. the description of the problem in context section) with the broader literature. It is the primary literature review within your application (though other sections can and perhaps should reference appropriate literature).</p>
+<p dir="ltr">For example, the rationale section of the Web 3D application includes covers 3 pages using literature to explain the need, the solution and the importance of what the application is trying to achieve.</p>
+<p dir="ltr">The rubric for Assignment 2, Part B includes the following relevant standards descriptors (emphasis added)</p>
+<blockquote>
+<p dir="ltr">The problem/reason for the application is clearly established and relevant to the context.</p>
+<p dir="ltr">A good array of literature specific to the grant application is used to support the application.</p>
+<p dir="ltr">It gathers, reflects, and analyses previous and existing practice.</p>
+<p dir="ltr">The literature review connects with established literature and theory, and uses that to inform the plan and justify the impacts/approach.</p>
+<p dir="ltr">The quality of the literature is appropriate, i.e. it is evidence-based, and it is appropriate to the context, or explains/justifies any contextual mismatch.</p>
+<p dir="ltr">A variety of perspectives from the literature is visible and linked.</p>
+</blockquote>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Building your draft application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Using your draft application fill in the outcomes &amp; impact component by answering the following questions.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What do you want to do and why is it needed?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Why is this project important in or relevant to your educational context? Who says?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do you have any evidence that your topic or issue warrants your attention?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How have others addressed the same or similar issues?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How will the work of others inform your own approach?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What conceptions of learning and teaching (theory) are you drawing upon to understand and address this challenge?  <br class="kix-line-break">e.g. if you’re proposing to adopt blended learning, then what do you mean by that term.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Where can you go to find out more?  <br>(Your work on emerging practices should help here)</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  2.5. Approach **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67934"></a>
+<h3>2.5. Approach</h3>
+<p dir="ltr" id="docs-internal-guid-7d380b5e-8ec0-eb9b-f783-9287fc1d108a">The approach component is where you describe the method you will use to implement a solution to the identified challenge within your problem. It is where you outline the process you will use to answer the identified research question. It is directly related to the fourth step in the integrated TISL model - the design of the method.</p>
+<p dir="ltr">For example, the Web3D application includes both a section titled Approach and a Project Timeline as an appendix.</p>
+<p dir="ltr">The rubric for Assignment 2, Part B includes the following relevant standards descriptor</p>
+<blockquote>The implementation plan and project activities are clearly achievable and will help answer the research question, achieve the aims, and demonstrate impact. The plan and activities are connected to the literature and exhibit elements of reflective practice.</blockquote>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Building your draft application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Using your draft application fill in the outcomes &amp; impact component by answering the following questions. </p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What are the major tasks, activities or milestones that you will need to complete?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How long will you need to complete these?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">For each of the expected project outcomes, are there corresponding activities to generate and measure the effectiveness of those outcomes?</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  2.6. Evaluation **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67935"></a>
+<h3>2.6. Evaluation</h3>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-8ec4-1923-fe93-cddff5cc3a20">The evaluation component of the application is where you describe the process and activities you will undertake to establish the value and impact of the project and its outcomes and offer an explanation as why you will do this.</p>
+<p dir="ltr">For example, the Web3D application includes a section titled Evaluation that offers a high level overview of how the evaluation will take place. This is supplemented by the inclusion of evaluation activities into project timeline. It is arguably a little light.</p>
+
+<p>The following “evaluation framework” is adapted from <a href="http://uq.edu.au/teaching-learning/download/TLGrantsWorkshopMay2011.pdf">this presentation</a> supporting applicants for L&amp;T grants from the University of Queensland and offers one example of an approach for explain an evaluation plan.</p>
+<table class="dj_table">
+<tbody>
+<tr class="dj_table_header"><th rowspan="2">Evaluation questions</th><th colspan="3">Sources / methods</th></tr>
+<tr class="dj_table_header"><th>Institutional contacts</th><th>Expert reference group</th><th>Existing records/artefacts</th></tr>
+<tr class="table_row">
+<td>What is the GGA policy in Australian Universities?</td>
+<td>Telephone interview (to clarify, address omissions or current activity)</td>
+<td> </td>
+<td>Web search of university policy documents</td>
+</tr>
+<tr class="table_alt_row">
+<td>What are current barriers to effective GGA implementation?</td>
+<td>Focus groups to elicit responses to issues paper based on literature review</td>
+<td>Written responses to draft issues paper</td>
+<td>Literature review (research into implementation experience)<br> Analysis of AUQA reports</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Building your draft application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-78aa7c05-8ec7-6596-ba35-cb3c5e3ada01">Using your draft application fill in the outcomes &amp; impact component by answering the following questions.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Who are the users of and other stakeholders in this program?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How could we obtain feedback from users during the project?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How will we know there has been change in practice?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What questions would stakeholders have in relation to this project? (evaluation questions)</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How could we collect data to answer these questions? (methods)</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">From whom or where (stakeholders and others) could data be collected?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What will count as evidence?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How will you evaluate each of your project’s outcomes?</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. Characteristics of a good application **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67936"></a>
+<h2>3. Characteristics of a good application</h2>
+<p dir="ltr" id="docs-internal-guid-81083ee7-8ec8-ba83-3f28-adab82f790c5">The following is a collation of advice on what makes for a good application for an L&amp;T grant. It is based on material from within the Australian higher education sector. It is intended to encourage further thinking and to be used in conjunction with the rubric for Assignment 2, Part B.</p>
+<p dir="ltr">A good application has:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">a clear focus and scope;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">identified how it fits with broader practice and earlier work;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">identified and established an issue or challenge as important;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">clear and measurable outcomes;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">an approach that is practical, achievable and concrete;</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">demonstrated that the need is: educationally sound, grounded in relevant literature, and that clear learning objectives have been identified.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">described the strategies for evaluation of outcomes through a range of methods.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  4. Tips for writing a L&amp;T application **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67937"></a>
+<h2>4. Tips for writing a L&amp;T application</h2>
+<p dir="ltr" id="docs-internal-guid-e5be28ac-8ec9-626b-1dee-a5829b072c75"><a href="http://epublications.bond.edu.au/cgi/viewcontent.cgi?article=1122&amp;amp;context=tls">Kinash (2016)</a> offers a range of tips for writing research grant proposals, specifically educators wishing to investigate questions about the use of educational technology. The tips are not exhaustive and are divided into before, during and after the grant proposal. They include:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Before</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Map the idea to the funding opportunity.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Hunt and gather what has already been done.</strong></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Clearly articulate questions, aims, intended outcomes and likely impact.</strong></p>
+</li>
+</ul>
+<li dir="ltr">
+<p dir="ltr">During</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Highlight key themes in the call and mirror them in the proposal.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Design achievable project activities with a realistic matched budget.</strong></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Proofread and edit multiple times and have the proposal peer reviewed.</strong></p>
+</li>
+</ul>
+<li dir="ltr">
+<p dir="ltr">After</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Track and report outcomes and impact.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Build relationships, networks and collegiality.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Identify questions for further research.</p>
+</li>
+</ul>
+</ul>
+<p dir="ltr">The tips in bold are those of particular relevance to this course and the application you are to develop. Some of these tips (e.g. hunt and gather what has already been done) align with work that you will have done earlier in the semester. Or others (e.g. have the proposal peer reviewed) align with tasks you will complete later in the semester (e.g. the writers workshop)</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Generating to do tasks for your draft application</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Download and read the sections of Kinash (2016) that you think could be useful (the bolded tips from above are recommended). Translate the advice Kinash (2016) offers into tasks for you to complete.</p>
+</div>
+</div>
+
+<h1 id="applying">Developing your L&T grant application</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> Experiencing - <a href="#experiencing">Grant applications: Why, what and some examples</a> </li>
+  <li> Examining - <a href="#examining">Making judgements about an example application</a> </li>
+  <li> Explaining - <a href="#explaining">Components and characteristics of effective L&T grant applications</a> </li>
+  <li> Applying - <a href="#applying">Developing your L&T grant application</a> </li>
+</ol>
+
+
+
+
+
+ <!-- ******** Chapter:  1. Further building your draft application **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67938"></a>
+<h2>1. Further building your draft application</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-8ece-05cc-0b01-f465e3dd092f">At this stage, it is hoped that you have developed an understanding of: the components of a L&amp;T grant application (especially the template you’ll be using); the characteristics of a good grant application; and some ideas about steps used to develop such an application. It’s now time to start applying that knowledge to developing your L&amp;T grant application.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">Further development</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Open up the draft application you were asked to start modifying in the last section of this learning path.</p>
+<p dir="ltr">Open up either your mapping of the course against the integrated TISL model (completed as part of <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=798714&amp;chapterid=65800">this activity</a>) or use <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxX3VzRmEwd2VYUW8/view">my mapping of the course</a>.</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Build your draft application more through work from earlier weeks.<br>Revisit the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824516&amp;chapterid=67929">table mapping the application components</a> to stages of the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=798714">integrated TISL model.</a> Use the mapping of the course against the TISL model to identify the weeks that focused on particular TISL stages (e.g. week 5 and 6 focused on evaluation).  Examine the activities from those weeks and use your responses to those activities to add more content to your draft application.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Evaluate the progress of your draft application.<br>Open a new copy of <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxVEpWamhIcXYyT0U/view?usp=sharing">the document</a> containing a copy of the rubric for Assignment 2, Part B. It was used <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=824512">earlier in this learning path.</a> Use the rubric to</p>
+</li>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Identify what expected components of your draft application are missing or a little light on in terms of quality.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Develop a list of tasks you need to complete to lift the draft application to achieve the standard you wish to achieve.</p>
+</li>
+<li>Get started working on them and ask questions if you require clarification.</li>
+</ol></ol></div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>

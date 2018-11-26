@@ -1,0 +1,1130 @@
+<html  dir="ltr" lang="en" xml:lang="en">
+  <head>
+    <title>EDU8702 - Week 7 - Which research question will I answer?</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="all">
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@prince-pdf { prince-pdf-page-layout: two-column-right }
+
+@page {
+  margin: 30mm 20mm 25mm 20mm;
+  size: 20cm 25cm;
+
+  @footnotes {
+    border-top: thin solid black; 
+    border-clip: 100px;
+    padding: 0;
+    margin: 0.6em 0 0 0;
+    margin-outside: -60mm;
+    padding: 0.3em 0 0 0;
+  }
+}
+
+@page :left {
+  margin-left: 80mm; 
+
+  @top-left {
+    font: 11pt "Lato", serif;
+    content: "From Wikibooks";
+    margin-left: -60mm;
+    white-space: nowrap; 
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-left-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-right: 60mm;
+  }
+}
+
+@page :right {
+  margin-right: 80mm; 
+
+  @top-right {
+    font: 11pt "Lato", serif;
+    content: string(title, first-except); 
+    white-space: nowrap; 
+    vertical-align: bottom;
+    margin-right: -60mm;
+    padding-bottom: 2em; 
+  }
+
+  @bottom-right-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-left: 60mm;
+  }
+}
+
+html, body, div, h1, h2, h3, p, blockquote, ul, ol, li, pre { 
+  margin: 0; padding: 0 }
+li { margin-left: 1.5em }
+
+title { string-set: title content() }
+
+body { 
+  font: 11pt "PT Serif", serif;
+  text-align: justify;
+  hyphens: auto;
+  counter-reset: figure, table;
+}
+
+h1, h2, h3 { 
+  font: 2.5em "Roboto Condensed", serif;
+  margin: 1.2em 0 0.5em
+}
+
+h1 { margin: 0 0 1em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.2em }
+
+a { color: inherit }
+
+p + p, aside + p { text-indent: 1.4em }
+p.first { text-indent: 0 }
+
+h1,h2,h3,h4,h5,h6, tr { text-align: left; text-align: start; }
+
+table { border-collapse: collapse; counter-increment: table }
+table.top { float: top; margin-outside: -60mm; vertical-align: top; margin-bottom: 1em; }
+td, th { border: thin solid black; padding: 0.2em }
+table:after { content: "Table " counter(table); font-style: italic; padding: 0.5em 0; display: block }
+
+
+figure { 
+  width: 100%; 
+  margin: 0; 
+  counter-increment: figure;
+}
+
+figure img { width: 100% }
+
+.mw-headline-anchor { display: none }
+.mw-editsection { display: none }
+
+aside {
+  background: #fcc;
+  padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
+  font-style: italic;
+  font-family: Lato, "Roboto Condensed", sans-serif;
+  width: 75mm;
+  box-sizing: border-box;
+  float: outside;
+  margin-outside: -80mm;
+  text-align: inside;
+  hyphens: manual;
+}
+
+figure.sidenote {
+  width: 55mm;
+  float: outside;
+  margin-outside: -60mm;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+figcaption:before {
+  content: "Figure " counter(figure) ": ";
+  padding-right: 0.5em;
+}
+
+figure.top { float: top; margin-bottom: 2em; }
+figure.bottom { float: bottom; margin-top: 1em; }
+
+figure.sidecaption figcaption {
+  float: outside;
+  width: 55mm;
+  margin-outside: -60mm;
+}
+
+h1 { margin-outside: -60mm }
+
+figure.wide {
+  width: auto;
+  margin-outside: -60mm;
+}  
+
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+p.author { margin: 2em 0; font-variant: small-caps }
+
+
+/* footnotes */
+
+::footnote-call {
+  content: counter(footnote);
+  font-size: 83%;
+  vertical-align: super;
+  line-height: none
+}
+
+::footnote-marker {
+  content: counter(footnote);
+  list-style-position: inside;
+  font-size: 83%;
+  vertical-align: super;
+  margin: 0; padding: 0 0.3em 0 0;
+}
+
+.foot {
+  float: footnote;
+  font-size: 90%; font-variant: normal;
+  footnote-style-position: inside;
+  margin: 0; padding: 0; text-indent: 0;
+}
+
+@page {
+}
+@media screen {
+  body { margin: 10% 30% 10% 10% }
+  figure { width: 100% }
+  figure.sidecaption figcaption { width: 28%; float: right; margin-right: -30%; }
+  aside { float: none; width: auto; margin: 1em 0 }
+}
+
+
+</style>
+</head>
+  <body>
+
+
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<h1 id="overview">Overview of Week 7 - Which research question will I answer?</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 7</a> </li>
+  <li> Experiencing - <a href="#experiencing">Example research questions and some starting points</a> </li>
+  <li> Examining - <a href="#examining">What makes for a good research question?</a> </li>
+  <li> Explaining - <a href="#explaining">Developing a good research question</a> </li>
+  <li> Applying - <a href="#applying">Which research question will you answer?</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<hr>
+
+<div class="book_chapter"><a name="ch66818"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-048c5894-0759-93a1-46c5-36b5fce7c663">This week, your driving question is</p>
+<blockquote>Which research question will I answer?</blockquote>
+<p dir="ltr">This week is where the course leaves Assignment 1 and moves onto Assignment 2. In particular, it marks the move into actively engaging in the phases of a Teacher Inquiry into Student Learning (TISL). As the driving question suggests, this week you’re focus will be on phase #3 of <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=798714">the TISL model</a> being used in this course</p>
+<blockquote>Formulation of the design objective and the research question;</blockquote>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p> There is an assumption within this week&#39;s learning path that you have already</p>
+<ol>
+<li>Clearly identified the specific, disciplinary learning and teaching context that you will use as the basis for Assignment 2.</li>
+<li>Already developed some ideas for issues, challenges or problems that you&#39;d like to address through a TISL process.</li>
+</ol>
+
+<p>If you haven&#39;t done that quite yet, there will be some explicit pointers within the learning path.</p></div>
+
+ <!-- ******** Chapter:  2. This week&#39;s learning path **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66819"></a>
+<h2>2. This week&#39;s learning path</h2>
+
+<p>This week&#39;s learning path consists of the following four sections.</p>
+<h4 dir="ltr" id="docs-internal-guid-e9d7c237-6f47-7cea-2d0b-e858ec64f39a">Experiencing - Example research questions &amp; some starting points</h4>
+<p dir="ltr">Asks you to respond to a series of <em>starting points</em> for sparking your thinking about research questions that are relevant for you. Provides a list of example good research questions related to TISL.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">1 Moodle book with a total of 4 pages.</p>
+</li>
+<li>1 activity responding to some starting points.<br>The output of this activity will be used again later in the learning path and as you work on Assignment 2.</li>
+</ul>
+<h4 dir="ltr">Examining - What makes for a good research question?</h4>
+<p dir="ltr">Provides some criteria for a good research question and asks you to use them to analyse some of the good research questions from the <em>Experiencing</em> book.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">A single Moodle book with a single page.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">1 activity analysing a couple of good research quesetions.</p>
+</li>
+</ul>
+<h4 dir="ltr">Explaining - Developing a good research question</h4>
+<p dir="ltr">Structures you reading of some pages from Pine (2009) to learn more about the requirements and process for developing a good TISL research question. </p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">One Moodle book with 5 pages.</p>
+</li>
+<li>
+
+<p>Read:</p>
+<ul>
+<li>
+
+<p>12 pages of Pine (2009)</p>
+</li>
+</ul>
+</li>
+<li>Complete a series of activities linking the Pine reading to your own context.</li>
+</ul>
+<h4 dir="ltr">Applying - Which research question will you answer?</h4>
+<p dir="ltr">A collection of activities intended to help you identify which research question you will answer for Assignment 2.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">One Moodle book with 6 pages</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Exercises to help progress Assignment 2.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. This week&#39;s references **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66820"></a>
+<h2>3. This week&#39;s references</h2>
+
+<p>The following references can also be found in <a href="https://www.zotero.org/groups/1438432/edu8702/items/collectionKey/REAGK7BB">the Week 7 section</a> of the <a href="https://www.zotero.org/groups/1438432/edu8702/items">course Zotero library</a>.</p>
+<h4>Reference list</h4>
+
+<p>Agee, J. (2009). Developing qualitative research questions: a reflective process. <i>International Journal of Qualitative Studies in Education</i>, <i>22</i>(4), 431–447. https://doi.org/10.1080/09518390902736512</p>
+
+<p>Caro-Bruce, C. (2000). <i>Action Research Facilitator’s Handbook</i>. National Staff Development Council, P. Retrieved from https://eric.ed.gov/?id=ED472452</p>
+
+<p>Emin-martínez, V., Hansen, C., Rodriguez-Triana, M. J., Wasson, B., Mor, Y., Dascalu, M., … Pernin, J.-P. (2014). Towards teacher-led design inquiry of learning. <i>eLearning Papers</i>, (January), 1–12.</p>
+
+<p>Hansen, C. J., &amp; Wasson, B. (2016). Teacher inquiry into student learning: The TISL heart model and method for use in teachers’ professional development. <i>Nordic Journal of Digital Literacy</i>, <i>11</i>(1), 24–49. https://doi.org/10.18261/issn.1891-943x-2016-01-02</p>
+
+<p><strong>To read (12 pages) </strong>Pine, G. (2009). Conducting Teacher Action Research. In <i>Teacher Action Research: Building Knowledge Democracies</i> (pp. 234–263). Thousand Oaks: SAGE Publications, Inc. https://doi.org/10.4135/9781452275079</p>
+
+<p>Rust, F. O. (2009). Teacher Research and the Problem of Practice. <i>Teachers College Record</i>, <i>111</i>(8), 1882–1893.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+</div>
+
+
+<h1 id="experiencing">Experiencing - Example research questions and some starting points</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 7</a> </li>
+  <li> Experiencing - <a href="#experiencing">Example research questions and some starting points</a> </li>
+  <li> Examining - <a href="#examining">What makes for a good research question?</a> </li>
+  <li> Explaining - <a href="#explaining">Developing a good research question</a> </li>
+  <li> Applying - <a href="#applying">Which research question will you answer?</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66814"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-074e-3860-d025-ccb75d722f03">It’s been argued that a good research question won’t ensure a quality research investigation, but a poor research question will make it significantly more difficulty to achieve a quality research investigation. The aim of this week’s learning path is to help you develop a good quality answer to this week’s driving question</p>
+<blockquote>Which research question will I answer?</blockquote>
+
+<p>You may already have an idea of what research question you might like to answer. As <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803052&amp;chapterid=65976">explained earlier in the course</a>, the Initiation phase of the TISL model can be sparked by a particular challenge, interest or question. By the end of this week you will have revisited that spark, perhaps reframed it, and made some progress in identifying the research question you will focus on answering for the rest of the course (<a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156">Assignment 2</a>, Parts <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#a">A</a> &amp; <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#b">B</a>).</p>
+<h4>Is the research question important?</h4>
+
+<p>Since this course is informed by the Teacher Inquiry into Student Learning (TISL) literature, let&#39;s see what that literature says about research questions.</p>
+
+<p>Hansel and Wasson (2016) suggest that</p>
+<blockquote>One key to using student learning for developing one’s own practice is the ability to find research questions driven by one’s own interests, which imparts the ownership of questions and findings. (pp. 29-30)</blockquote>
+
+<p>And later they write</p>
+<blockquote>Literature within the field suggests that the formulation of a question is key to the teacher inquiry process, and that the question is rooted in practice ... focused on student learning....The research question feeds into the heart of the TISL Heart, the Method, which expounds how to collect student data to answer the research question. (p. 39)</blockquote>
+<h4><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></h4>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Starting points **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66815"></a>
+<h2>2. Starting points</h2>
+
+<p>The assumption for the following activity is that you have already been giving some serious thought to the particular learning and teaching context that will be the focus of your TISL.  While it isn’t necessary to have finalised on which context you will use (just yet), you should be looking at achieving this by the end of this learning path. </p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>What are your starting points?</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-af2714d3-0754-17d6-ea0e-b88311f5a092">Thinking about a particular teaching context you might like to be the focus for your TISL, use <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxaEtkdFcyREg3eGM/view?usp=sharing">this Word document</a> to respond to the following Starting Points (questions).  Alternatively, writing a post on your blog where you respond to these questions could be very useful.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">I would like to improve</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">I am perplexed by</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Some people are unhappy about</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">I’m really curious about</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">I want to learn more about</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">An idea I would like to try out in my class is</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Something I think would really make a difference is</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Something I would like to do to change is</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Right now, some areas I’m particularly interested in are</p>
+</li>
+</ul>
+<p dir="ltr">This activity is based on Starting Points handout from Caro-Bruce (2000, p. 81).</p>
+</div>
+</div></div>
+
+ <!-- ******** Chapter:  3. Some example good research questions **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66816"></a>
+<h2>3. Some example good research questions</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0755-6dda-f8d9-cef9f7b28f03">TISL is a refinement and specific form of teacher research. Emin-martinez et al (2014) define it as</p>
+<blockquote>a systemic approach to teacher inquiry, has its roots in “insider view” approaches such as critical inquiry, action research, and teacher research, where teachers conduct their own research, in real classrooms and school settings, focusing on local practices. (p. 2)</blockquote>
+<p dir="ltr">Meaning that not all good research questions would be considered good quality research questions for TISL. The origins of TISL within teacher research and subsequently action research means that research questions from those settings are more appropriate.</p>
+<p dir="ltr">The following sample of good research questions are adapted from Caro-Bruce (2000, p. 86). As you can probably tell these take a focus on classroom research in primary and secondary settings. While the specific questions may be less than appropriate to a tertiary context, their features as a research question do apply well to TISL within a tertiary context.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  3.1. Example good classroom action research questions **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66817"></a>
+<h3>3.1. Example good classroom action research questions</h3>
+
+<p> The following questions are from <a href="https://eric.ed.gov/?id=ED472452">Caro-Bruce</a> (2000, p. 86)</p>
+<blockquote><ol>
+<li dir="ltr">
+<p dir="ltr">How can I help the students in my classroom feel comfortable working with diverse groupings of classmates and overcome, at least part of the time, their desire to always be with their friends?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How can I more effectively facilitate independent writing in my kindergarten classroom?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How can I, a school nurse, better help classroom teachers address the complex issues of educating students with ADHD?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How can fifth grade students be encouraged to write thoughtful inquiry questions for a science fair?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How can the science department and the special education department heterogeneously group a wide variety of students in the same classroom and make it a successful experience for the students and staff?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How does the Writing Workshop approach affect my students&#39; writing and their feelings toward writing?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What kinds of assessments best help me understand and teach a particular learner with autism?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How does chronic staff absenteeism impact the education of students with cognitive disabilities at my school, and how does it impact the staff who provides their education?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What changes in our teaching styles, curriculum design, materials, and professional support are needed to implement a new math program in our inclusive classroom?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How can I, a high school social worker, use the resiliency principles and research to more effectively support student success?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How does the direct teaching of anger management skills affect the classroom climate in primary-age school children?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What classroom strategies are effective in developing student self-evaluation of their learning?</p>
+</li>
+</ol></blockquote>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Analysing good questions</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0757-2d2e-9a4e-ea1f5e56b0df">Examine the above examples of good classroom action research questions and consider the following questions</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What, if anything, about these example research questions concerns or challenges your expectations of research questions? <br class="kix-line-break">(e.g. what about the heavy use of personal pronouns like “I” and “me”?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do you see any common features of these research questions?</p>
+</li>
+</ul>
+</div>
+</div></div>
+
+
+<h1 id="examining">Examining - What makes for a good research question?</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 7</a> </li>
+  <li> Experiencing - <a href="#experiencing">Example research questions and some starting points</a> </li>
+  <li> Examining - <a href="#examining">What makes for a good research question?</a> </li>
+  <li> Explaining - <a href="#explaining">Developing a good research question</a> </li>
+  <li> Applying - <a href="#applying">Which research question will you answer?</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+ <!-- ******** Chapter:  1. Some initial criteria **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66821"></a>
+<h2>1. Some initial criteria</h2>
+
+<p>The following table offers some criteria for what makes a good Action Research Question. It is adapted from Caro-Bruce (2000, p. 76)</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Use the criteria</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Pick two or three of the example good questions from <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=816672&amp;chapterid=66817">this page</a> from the previous book in this learning path.</p>
+<p dir="ltr">Analyse those questions using the “criteria” in the table below. Are they all good questions? Are you able to relatively easily identify and judge each of the criteria?</p>
+<p dir="ltr"></p>
+</div>
+</div>
+
+<p></p>
+
+<p></p>
+
+
+<div dir="ltr">
+<table class="dj_table">
+<tbody>
+<tr class="dj_table_header"><th>Criteria</th><th>Description</th><th>Examples</th></tr>
+<tr class="table_row">
+<td>
+<p dir="ltr">Significant</p>
+</td>
+<td>
+<p dir="ltr">Focuses on teaching and learning practices that could have an impact on students’ behaviour or achievement</p>
+</td>
+<td>
+<p dir="ltr">What can I do to encourage quiet high school English students to participate actively in class dicussions?</p>
+</td>
+</tr>
+<tr class="table_alt_row">
+<td>
+<p dir="ltr">Manageable</p>
+</td>
+<td>
+<p dir="ltr">Do-able within the time constraints of the researcher. Is neither so broad as to be impossible to answer, nor is it so narrow that it cannot offer much insight.</p>
+</td>
+<td>
+<p dir="ltr">Too broad: Why don’t students do homework?</p>
+<p dir="ltr">Too narrow: What can I do to get students to stop chewing gum in my class?</p>
+</td>
+</tr>
+<tr class="table_row">
+<td>
+<p dir="ltr">Contextual</p>
+</td>
+<td>
+<p dir="ltr">Embedded in the day to day work of the researcher, rather than an extra project added onto existing teaching tasks</p>
+</td>
+<td>
+<p dir="ltr">Beyond the context: What can be done to redefine young women’s perceptions of themselves as women in the classroom?</p>
+<p dir="ltr"><br class="kix-line-break">Contextual: What motivational strategies can I employ to increase the achievement of seven of my African American students who are failing in science?</p>
+</td>
+</tr>
+<tr class="table_alt_row">
+<td>
+<p dir="ltr">Clearly stated</p>
+</td>
+<td>
+<p dir="ltr">Accurately conveys the focus and scope of the research</p>
+</td>
+<td>
+<p dir="ltr">What happens when I attempt to use the activities developed for my gifted classes in middle school science with a heterogeneous class?</p>
+</td>
+</tr>
+<tr class="table_row">
+<td>
+<p dir="ltr">Open-ended</p>
+</td>
+<td>
+<p dir="ltr">Phrased to generate a broad range of insights or understandings rather than prove a specific point or to compare experimental and control groups</p>
+</td>
+<td>
+<p dir="ltr">Open-ended: What happens when I try to teach basic algebraic concepts to sixth graders?</p>
+<p dir="ltr">Seeks to prove a point: Should our district adopt a new curriculum that teaches sixth graders algebraic concepts?</p>
+</td>
+</tr>
+<tr class="table_alt_row">
+<td>
+<p dir="ltr">Self-reflective</p>
+</td>
+<td>
+<p dir="ltr">Focuses on the actions or practice of the researcher</p>
+</td>
+<td>
+<p dir="ltr">How might I change my questioning strategies so that my ninth grade English students begin to see and examine in depth the key themes in literature?</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+<h1 id="explaining">Explaining - Developing a good research question</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 7</a> </li>
+  <li> Experiencing - <a href="#experiencing">Example research questions and some starting points</a> </li>
+  <li> Examining - <a href="#examining">What makes for a good research question?</a> </li>
+  <li> Explaining - <a href="#explaining">Developing a good research question</a> </li>
+  <li> Applying - <a href="#applying">Which research question will you answer?</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66822"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0764-7e8d-8283-1e9cf0967f42">So far this week you’ve examined some example good questions and been asked to analyse those questions against a sample set of criteria. You started this week be responding to some starting points that might help you identify research questions relevant to your context.  The aim of this part of the learning path is to provide some additional activities and abstract conceptualisations to help you refine these initial starting points into a good quality, specific question.</p>
+<h4 dir="ltr">Some notes on “research”</h4>
+<p dir="ltr">Before you start focusing on the specifics of developing your research question, time to contextualise the use of the term research.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Reading</p>
+</div>
+
+
+<div class="dj_activity">Read from the heading <em>A few principles for conducting action research</em> (bottom of p. 236) through the heading <em>Identifying the research question</em> (near the top of p. 237) in Pine (2009). In particular, the first paragraph at the bottom of page 236.</div>
+</div>
+
+<p> </p>
+
+<p>This paragraph sums up nicely the perspective of <em>research</em> adopted within TISL. The focus here is not on establishing whether or not a particular intervention will work perfect in all contexts. You will not be engaged in large double-blind, randomised control trials as part of your work in TISL.  The focus of TISL is in discovering and inventing what will work within your context.</p></div>
+
+ <!-- ******** Chapter:  2. Where does TISL research question come from? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66823"></a>
+<h2>2. Where does TISL research question come from?</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Reading</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0766-9f02-4881-3cf44dddebf6">Read the section <em>Identifying the Research Question</em> from Pine (2009, pp. 237-239).  As you do, consider the following questions:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Where might research questions emerge from?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What does identifying a good research question involve?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How many of these activities and practices do you participate within?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do any of the 8 passions presented engage your passions? What are you passionate about in your teaching context?</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p> </p>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0766-e428-04fb-e8145631c9d8">Hopefully the starting points section in this reading reminded you of something from this learning path.</p>
+<p dir="ltr">Pine (2009) made the point that identifying a research question is recursive and iterative. Finding the right question for you at this time from the “almost infinite number of research questions” is not straight-forward, takes some time, consideration and reflection, and is liable to change.</p></div>
+
+ <!-- ******** Chapter:  3. What are the characteristics of good research questions? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66824"></a>
+<h2>3. What are the characteristics of good research questions?</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p>Earlier in the learning path <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=816696">you were introduced</a> to a set of criteria for good research questions adapted from Caro-Bruce (2000). The following reading reinforces and hopefully expands your insight into what makes for a good research question.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Reading</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0768-f737-777f-9c9aabe9e831">Read the section <em>Characteristics of good research questions</em> from Pine (2009, pp. 239-241)</p>
+<p dir="ltr">As you read through this section actively update the criteria for good research questions you were provided with earlier. Add criteria, add descriptions, or add examples from the Pine (2009) reading as appropriate.</p>
+<p dir="ltr">For example, do you think the earlier criteria effectively captures the following advice about good research questions from Pine (2009):</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">“benefits your students by informing your teaching and the curriculum, by providing new insights about students and their learning, by broadening and deepening your perspectives, or by improving practice” (p. 239)</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">A good research question leads to action that makes a difference.</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p> </p>
+
+<p>Again in this reading, Pine (2009) reinforces the value of not being overly wedded to a particular question. Changing questions, in a process like TISL, can be of significant value. </p></div>
+
+ <!-- ******** Chapter:  4. Focus on the students, not the teacher **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66825"></a>
+<h2>4. Focus on the students, not the teacher</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-076a-698e-eec8-aa0d184e9133">Pine (2009) makes a point of emphasising the point that teacher research should have a focus on benefiting students. It is important that your research question and all that you write about your TISL should illustrate this focus on improving student learning or the student experience. In doing this, the language you use is important. The following provides a few simple pointers and examples to illustrate.</p>
+<p dir="ltr">Which of the following descriptions do you think has more a focus on student learning, rather than the teacher and teaching.</p>
+<blockquote>
+
+<p>I taught the course EDC3100, ICT and Pedagogy for five years.</p>
+
+<p>Over a five year period I have helped over 1000 students learn how to use ICT to enhance and transform their pedagogy.</p>
+</blockquote>
+<p dir="ltr">Language should focus on students and what they are learning, rather than the content or course you are teaching.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  5. How to finalise and frame your research question **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66826"></a>
+<h2>5. How to finalise and frame your research question</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-076b-3290-4615-fae9c99bf3cf">In the Apply section of this learning path - coming up next - the focus will be for you to commence (and eventually finish) the journey of identifying your answer to the driving question for this week</p>
+<blockquote>Which research question will I answer?</blockquote>
+<p dir="ltr">Before we start that section, time to look at Pine’s (2009) advice</p>
+<p dir="ltr"></p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Reading</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-076b-edc8-6e77-e59a39c70d9d">Read the section <em>Framing the research question</em> from Pine (2009, pp. 242-248). As you read through this section, consider the following:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Don’t be in a hurry to state the question.<br class="kix-line-break">Early on in the section, Pine (2009) advises not to do this. Echoing the experience of Hansen and Wasson (2016) shared <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66011">earlier in the course</a> with the tendency to jumping to the research question, without questioning assumptions.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Is there any advice in this reading that could be used to refine the <em>criteria</em> for a good research question introduced earlier in the learning path?<br class="kix-line-break">e.g. Have you avoided jargon and value-laden terms? Is your question a <em>what</em>, <em>how</em> or <em>why</em> question?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Have you considered all of the variables that might influence student learning in your context? What might those variables be? Have you focused in your question on the variables you can control?</p>
+</li>
+</ul>
+</div>
+</div>
+
+<p> </p></div>
+
+
+
+<h1 id="applying">Applying - Which research question will you answer?</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 7</a> </li>
+  <li> Experiencing - <a href="#experiencing">Example research questions and some starting points</a> </li>
+  <li> Examining - <a href="#examining">What makes for a good research question?</a> </li>
+  <li> Explaining - <a href="#explaining">Developing a good research question</a> </li>
+  <li> Applying - <a href="#applying">Which research question will you answer?</a> </li>
+</ol>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66827"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-4d806c90-076d-f8ae-777d-8e3357a45242">The following offers a sequence of activities intended to help you answer this week’s driving question</p>
+<blockquote>Which research question will I answer?</blockquote>
+<p dir="ltr">While you can choose not to engage with the activities, you will need to be able to answer this week’s driving question. Since developing a research question is a key phase in the approach to TISL adopted in this course, you will need to develop a research question. The rubric for <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#b">Assignment 2, Part B</a> explicitly mentions the need for a research question.</p>
+<p dir="ltr">As mentioned in Pine (2009) and other sources, maintaining a journal (e.g. your blog) can be a useful and important tool for successful teacher research. As is engaging in on-going critical reflection. For these reasons it is suggested that you use your blog to make explicit, share and reflect upon the recursive and complex process of finalising your research question.</p>
+<p dir="ltr">To help you step through that complex process, the following activities are suggested:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Finalise your context</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Expand upon your starting points</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Develop some relevant research questions</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Question assumptions</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Ask others your question</p>
+</li>
+</ol>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Finalise your context **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66828"></a>
+<h2>2. Finalise your context</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p> </p>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0772-e465-32dd-a0aa79953392">Much earlier in the course you were <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803052&amp;chapterid=65997">asked to share</a> a description of the higher education teaching context that will form the basis for your inquiry into learning and teaching in this course. For Assignment 1, <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=809192&amp;chapterid=66558">you were asked</a> to think of a specific teaching episode that you could use to develop an evaluation plan. At the end of week 2 <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803226&amp;chapterid=66019">you were asked</a> to respond to a range of specific questions about your teaching discipline, your specific context, and what you know about teaching in that discipline. This was the start of a process you would need to develop a plan to explore the conceptions of teaching within your discipline (<a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803226&amp;chapterid=66019">Assignment 1, Part A</a>)</p>
+<p dir="ltr">You know need to distill all of that and other thinking to identify a specific learning and teaching context.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Start your <em>Developing my TISL plan</em> document</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0773-0df3-073e-523095120c8f">Open up a Word document (Google doc, blog post, piece of paper, whichever you’d prefer) and give it a title like <em>Developing my TISL plan</em>.</p>
+<p dir="ltr">Add to that document (after the title) the heading My Teaching Context.</p>
+<p dir="ltr">Now, decided on the teaching context you will use for your TISL process. Start adding to your document as much detail as you can about that context. Drawing where appropriate on the work you’ve already done this semester throughout all the learning paths.</p>
+</div>
+</div>
+
+<p> </p></div>
+
+ <!-- ******** Chapter:  3. Expand upon your stating points **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66829"></a>
+<h2>3. Expand upon your stating points</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p> </p>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0772-008a-6703-d1298653ff39">At the very start of this learning path you were asked to use <a href="https://drive.google.com/file/d/0Bx9aZ7LiPYTxaEtkdFcyREg3eGM/view?usp=sharing">this Word document</a> to generate some responses to some <em>starting points</em>. Along similar lines, Pine (2009, p. 242) cites Spradley’s (1979) “grand tour questions” about your context as useful for guiding your inquiry. These grand tour questions are</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What is happening here?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What problems are most salient about my teaching situation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What might happen if I change something in my teaching situation?</p>
+</li>
+</ul>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Expand your stating points</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0772-8208-d020-805ef3b6ec7e">Add responses to the starting points and “grand tour questions” to your <em>Developing my TISL plan</em> document.</p>
+<p dir="ltr">Spend some time re-visiting and re-thinking those responses.</p>
+</div>
+</div>
+
+<p> </p></div>
+
+ <!-- ******** Chapter:  4. Develop some relevant research questions **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66830"></a>
+<h2>4. Develop some relevant research questions</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p> Earlier in the learning path you were shown some criteria for good research questions and throughout the learning path you were encouraged to add further criteria drawn from the literature.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Develop your research question(s)</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0771-45a2-5bae-2ee11a23c258">Add a section to your <em>Developing my TISL plan</em> document with the heading <em>Initial research questions</em>.</p>
+<p dir="ltr">Using the criteria for good research questions as a guide and drawing on your responses to the starting points and “grand tour questions” start brainstorming some research questions that spark your passions and are authentic to your context.</p>
+</div>
+</div>
+
+<p> </p></div>
+
+ <!-- ******** Chapter:  5. Question your assumptions **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66831"></a>
+<h2>5. Question your assumptions</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p> An important step in the TISL process is questioning assumptions. We are invariably influenced by our assumptions. Your research questions will be a product of your assumptions. Before going to much further it is important that you think clearly about the beliefs and assumptions that underpin your questions.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Question your assumptions</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0770-c01b-851a-1e52e0a8182b">Apply the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803179&amp;chapterid=66004">process for critical reflection</a> introduced in the Week 2 learning path to surface and question the assumptions underpinning the research question(s) you’ve developed so far.</p>
+<p dir="ltr">Rather than start by describing an experience, move to step #2 and analyse your research questions for each of Brookfield’s <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803179&amp;chapterid=66008">three types of assumptions</a>. Make use of techniques like the 5 Whys or Brookfield’s four lenses. Draw on your work around the assumptions of learning and teaching of your discipline.</p>
+<p dir="ltr">If appropriate, rework your research questions.  Make sure you re-examine any question modifications using your criteria.</p>
+</div>
+</div>
+
+<p> </p></div>
+
+ <!-- ******** Chapter:  6. Ask others your question **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch66832"></a>
+<h2>6. Ask others your question</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p> Lastly, it’s time for some peer (and not so peer) review.  The following activity is adapted from Caro-Bruce (2000, p. 92)</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Ask others your question</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-0770-22f5-4606-698ca9fac45e">Identify the research question(s) you like the most and ask three people to react to it. If possible, be sure to include at least one person who might know about your topic in depth. Someone familiar with your learning context, especially a supervisor, might also be a useful person to ask.</p>
+<p dir="ltr">Explain what the question is and why it is a question for you. Ask these people the following (and other) questions:</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">What do you think about the question?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Do you think it is a worthwhile question to pursue?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What suggestions do you have to offer?</p>
+</li>
+</ol>
+<p dir="ltr">Based on their responses, revise your research question.</p>
+</div>
+</div>
+
+<p> </p></div>

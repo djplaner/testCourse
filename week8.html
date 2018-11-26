@@ -1,0 +1,998 @@
+<html>
+  <head>
+  <title>EDU8702 - Week 8 - What are some relevant emerging practices?</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css" media="all">
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+@prince-pdf { prince-pdf-page-layout: two-column-right }
+
+@page {
+  margin: 30mm 20mm 25mm 20mm;
+  size: 20cm 25cm;
+
+  @footnotes {
+    border-top: thin solid black; 
+    border-clip: 100px;
+    padding: 0;
+    margin: 0.6em 0 0 0;
+    margin-outside: -60mm;
+    padding: 0.3em 0 0 0;
+  }
+}
+
+@page :left {
+  margin-left: 80mm; 
+
+  @top-left {
+    font: 11pt "Lato", serif;
+    content: "From Wikibooks";
+    margin-left: -60mm;
+    white-space: nowrap; 
+    vertical-align: bottom;
+    padding-bottom: 2em;
+  }
+
+  @bottom-left-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-right: 60mm;
+  }
+}
+
+@page :right {
+  margin-right: 80mm; 
+
+  @top-right {
+    font: 11pt "Lato", serif;
+    content: string(title, first-except); 
+    white-space: nowrap; 
+    vertical-align: bottom;
+    margin-right: -60mm;
+    padding-bottom: 2em; 
+  }
+
+  @bottom-right-corner {
+    font: 11pt "Lato", serif;
+    content: counter(page);
+    vertical-align: top;
+    padding-top: 2em;
+    padding-left: 60mm;
+  }
+}
+
+html, body, div, h1, h2, h3, p, blockquote, ul, ol, li, pre { 
+  margin: 0; padding: 0 }
+li { margin-left: 1.5em }
+
+title { string-set: title content() }
+
+body { 
+  font: 11pt "PT Serif", serif;
+  text-align: justify;
+  hyphens: auto;
+  counter-reset: figure, table;
+}
+
+h1, h2, h3 { 
+  font: 2.5em "Roboto Condensed", serif;
+  margin: 1.2em 0 0.5em
+}
+
+h1 { margin: 0 0 1em }
+h2 { font-size: 1.5em }
+h3 { font-size: 1.2em }
+
+a { color: inherit }
+
+p + p, aside + p { text-indent: 1.4em }
+p.first { text-indent: 0 }
+
+h1,h2,h3,h4,h5,h6, tr { text-align: left; text-align: start; }
+
+table { border-collapse: collapse; counter-increment: table }
+table.top { float: top; margin-outside: -60mm; vertical-align: top; margin-bottom: 1em; }
+td, th { border: thin solid black; padding: 0.2em }
+table:after { content: "Table " counter(table); font-style: italic; padding: 0.5em 0; display: block }
+
+
+figure { 
+  width: 100%; 
+  margin: 0; 
+  counter-increment: figure;
+}
+
+figure img { width: 100% }
+
+.mw-headline-anchor { display: none }
+.mw-editsection { display: none }
+
+aside {
+  background: #fcc;
+  padding: 0.6em 1.3em 0.6em 1.3em; /* assuming it will end up on right page */
+  font-style: italic;
+  font-family: Lato, "Roboto Condensed", sans-serif;
+  width: 75mm;
+  box-sizing: border-box;
+  float: outside;
+  margin-outside: -80mm;
+  text-align: inside;
+  hyphens: manual;
+}
+
+figure.sidenote {
+  width: 55mm;
+  float: outside;
+  margin-outside: -60mm;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+figcaption:before {
+  content: "Figure " counter(figure) ": ";
+  padding-right: 0.5em;
+}
+
+figure.top { float: top; margin-bottom: 2em; }
+figure.bottom { float: bottom; margin-top: 1em; }
+
+figure.sidecaption figcaption {
+  float: outside;
+  width: 55mm;
+  margin-outside: -60mm;
+}
+
+h1 { margin-outside: -60mm }
+
+figure.wide {
+  width: auto;
+  margin-outside: -60mm;
+}  
+
+ /* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+} 
+
+p.author { margin: 2em 0; font-variant: small-caps }
+
+
+/* footnotes */
+
+::footnote-call {
+  content: counter(footnote);
+  font-size: 83%;
+  vertical-align: super;
+  line-height: none
+}
+
+::footnote-marker {
+  content: counter(footnote);
+  list-style-position: inside;
+  font-size: 83%;
+  vertical-align: super;
+  margin: 0; padding: 0 0.3em 0 0;
+}
+
+.foot {
+  float: footnote;
+  font-size: 90%; font-variant: normal;
+  footnote-style-position: inside;
+  margin: 0; padding: 0; text-indent: 0;
+}
+
+@page {
+}
+@media screen {
+  body { margin: 10% 30% 10% 10% }
+  figure { width: 100% }
+  figure.sidecaption figcaption { width: 28%; float: right; margin-right: -30%; }
+  aside { float: none; width: auto; margin: 1em 0 }
+}
+
+
+</style>
+  <body>
+
+<p>&nbsp;</p><p><br /></p>
+<hr>
+
+<h1 id="overview">Overview of week 8 - What are some relevant emerging practices?</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 8</a> </li>
+  <li> Experiencing - <a href="#experiencing">Why, how and what - examining a component map</a> </li>
+  <li> Examining - <a href="#examining">Questioning my components map</a> </li>
+  <li> Explaining - <a href="#explaining">Searching for possibilities and questioning assumptions</a> </li>
+  <li> Applying - <a href="#applying">What are some relevant emerging practices?</a> </li>
+</ol>
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67191"></a>
+<h2>1. Introduction</h2>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+<p>This week your driving question is</p>
+<blockquote>What are some relevant emerging practices?</blockquote>
+
+<p>A particular focus for this week is developing and starting to apply the plan that will form the basis for your response to <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#a">Assignment 1, Part A</a>. To do this, you will be drawing on work that you have done earlier in this course, including work from Assignment 1.</p>
+
+<p></p></div>
+
+ <!-- ******** Chapter:  2. This week&#39;s learning path **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67192"></a>
+<h2>2. This week&#39;s learning path</h2>
+
+<p>This week&#39;s learning path consists of the following four sections.</p>
+<h4 dir="ltr" id="docs-internal-guid-e9d7c237-6f47-7cea-2d0b-e858ec64f39a">Experiencing - Why, how and why - examining a component map</h4>
+
+<p>Explains the connection of this week&#39;s work to both assignments and earlier topics in the course. Introduces the idea of a component map that identifies three important components of a TISL project - Why? How? and What? Shows you an initial component map for a potential TISL project and asks you to start developing your own.</p>
+
+<p>This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">1 Moodle book with a total of 10 pages.</p>
+</li>
+<li>1 activity developing your own component map.<br>The output of this activity will be used again later in the learning path and as you work on Assignment 2.</li>
+</ul>
+<h4 dir="ltr">Examining - Questioning my components map</h4>
+<p dir="ltr">Offers a list of questions that can be used to analyse a particular component map and asks you to apply these questions to my component map, introduced in the last book (and/or your component map).</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">A single Moodle book with a single page.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">1 activity analysing a component map.</p>
+</li>
+</ul>
+<h4 dir="ltr">Explaining - Searching for possibilities and questioning assumptions</h4>
+<p dir="ltr">Talks a bit about wicked problems and suggests a two-stage process for answering this week&#39;s driving question. Actively links back to related content from earlier in the course.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">One Moodle book with 5 pages.</p>
+</li>
+<li>Complete activities developing more questions for analysing a TISL project and emerging practice.</li>
+</ul>
+<h4 dir="ltr">Applying - What are some relevant emerging practices?</h4>
+<p dir="ltr">A single activity that asks you to start developing the plan you will use to answer the driving question. Draws heavily on content from throughout this week.</p>
+<p dir="ltr">This includes:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">One Moodle book with 1 page</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Exercise to help progress Assignment 2.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. This week&#39;s references **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67193"></a>
+<h2>3. This week&#39;s references</h2>
+
+<p>The following references can also be found in <a href="https://www.zotero.org/groups/1438432/edu8702/items/collectionKey/JG6DQTH9">the Week 8 section</a> of the <a href="https://www.zotero.org/groups/1438432/edu8702/items">course Zotero library</a>.</p>
+<h4>Reference list</h4>
+
+
+<div class="csl-bib-body" style="line-height: 2; padding-left: 2em; text-indent: -2em;">
+
+
+<div class="csl-entry">Borko, H., Whitcomb, J., &amp; Liston, D. (2009). Wicked Problems and Other Thoughts on Issues of Technology and Teacher Learning. <i>Journal of Teacher Education</i>, <i>60</i>(1), 3.</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Wicked%20Problems%20and%20Other%20Thoughts%20on%20Issues%20of%20Technology%20and%20Teacher%20Learning&amp;rft.jtitle=Journal%20of%20Teacher%20Education&amp;rft.volume=60&amp;rft.issue=1&amp;rft.aufirst=Hilda&amp;rft.aulast=Borko&amp;rft.au=Hilda%20Borko&amp;rft.au=Jennie%20Whitcomb&amp;rft.au=Daniel%20Liston&amp;rft.date=2009-01-01&amp;rft.pages=3&amp;rft.issn=0022-4871&amp;rft.language=eng"></span>
+
+
+<div class="csl-entry">Dalgarno, B., Gregory, S., Knox, V., &amp; Reiners, T. (2016). Practising Teaching using Virtual Classroom Role Plays. <i>Australian Journal of Teacher Education</i>, <i>41</i>(1). https://doi.org/10.14221/ajte.2016v41n1.8</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.14221%2Fajte.2016v41n1.8&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Practising%20Teaching%20using%20Virtual%20Classroom%20Role%20Plays&amp;rft.jtitle=Australian%20Journal%20of%20Teacher%20Education&amp;rft.volume=41&amp;rft.issue=1&amp;rft.aufirst=Barney&amp;rft.aulast=Dalgarno&amp;rft.au=Barney%20Dalgarno&amp;rft.au=Sue%20Gregory&amp;rft.au=Vicki%20Knox&amp;rft.au=Torsten%20Reiners&amp;rft.date=2016-01-01&amp;rft.issn=1835-517X"></span>
+
+
+<div class="csl-entry">Mishra, P., &amp; Koehler, M. J. (2008). Introducing technological pedagogical content knowledge. In <i>Annual Meeting of the American Educational Research Association (New York, New York)</i> (pp. 1–16). Retrieved from http://punya.educ.msu.edu/presentations/AERA2008/MishraKoehler_AERA2008.pdf</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=proceeding&amp;rft.atitle=Introducing%20technological%20pedagogical%20content%20knowledge&amp;rft.btitle=Annual%20Meeting%20of%20the%20American%20Educational%20Research%20Association%20(New%20York%2C%20New%20York)&amp;rft.aufirst=P.&amp;rft.aulast=Mishra&amp;rft.au=P.%20Mishra&amp;rft.au=M.J.%20Koehler&amp;rft.date=2008&amp;rft.pages=1-16&amp;rft.spage=1&amp;rft.epage=16"></span>
+
+
+<div class="csl-entry">Paliadelis, P. S., Stupans, I., Parker, V., Piper, D., Gillan, P., Lea, J., … Fagan, A. (2015). The development and evaluation of online stories to enhance clinical learning experiences across health professions in rural Australia. <i>Collegian</i>, <i>22</i>(4), 397–403. https://doi.org/10.1016/j.colegn.2014.08.003</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1016%2Fj.colegn.2014.08.003&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=The%20development%20and%20evaluation%20of%20online%20stories%20to%20enhance%20clinical%20learning%20experiences%20across%20health%20professions%20in%20rural%20Australia&amp;rft.jtitle=Collegian&amp;rft.stitle=Collegian&amp;rft.volume=22&amp;rft.issue=4&amp;rft.aufirst=Penny%20Susan&amp;rft.aulast=Paliadelis&amp;rft.au=Penny%20Susan%20Paliadelis&amp;rft.au=Ieva%20Stupans&amp;rft.au=Vicki%20Parker&amp;rft.au=Donella%20Piper&amp;rft.au=Pauline%20Gillan&amp;rft.au=Jackie%20Lea&amp;rft.au=Helen%20Mary%20Jarrott&amp;rft.au=Rhonda%20Wilson&amp;rft.au=Judith%20N.%20Hudson&amp;rft.au=Anthea%20Fagan&amp;rft.date=2015-12-01&amp;rft.pages=397-403&amp;rft.spage=397&amp;rft.epage=403&amp;rft.issn=1322-7696"></span>
+
+
+<div class="csl-entry">Paliadelis, P., &amp; Wood, P. (2016). Learning from clinical placement experience: Analysing nursing students’ final reflections in a digital storytelling activity. <i>Nurse Education in Practice</i>, <i>20</i>, 39–44. https://doi.org/10.1016/j.nepr.2016.06.005</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1016%2Fj.nepr.2016.06.005&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Learning%20from%20clinical%20placement%20experience%3A%20Analysing%20nursing%20students%E2%80%99%20final%20reflections%20in%20a%20digital%20storytelling%20activity&amp;rft.jtitle=Nurse%20Education%20in%20Practice&amp;rft.stitle=Nurse%20Education%20in%20Practice&amp;rft.volume=20&amp;rft.aufirst=Penny&amp;rft.aulast=Paliadelis&amp;rft.au=Penny%20Paliadelis&amp;rft.au=Pamela%20Wood&amp;rft.date=2016-09-01&amp;rft.pages=39-44&amp;rft.spage=39&amp;rft.epage=44&amp;rft.issn=1471-5953"></span>
+
+
+<div class="csl-entry">Rittel, H. W. J., &amp; Webber, M. M. (1973). Dilemmas in a general theory of planning. <i>Policy Sciences</i>, <i>4</i>(2), 155–169. https://doi.org/10.1007/BF01405730</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_id=info%3Adoi%2F10.1007%2FBF01405730&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Dilemmas%20in%20a%20general%20theory%20of%20planning&amp;rft.jtitle=Policy%20Sciences&amp;rft.stitle=Policy%20Sci&amp;rft.volume=4&amp;rft.issue=2&amp;rft.aufirst=Horst%20W.%20J.&amp;rft.aulast=Rittel&amp;rft.au=Horst%20W.%20J.%20Rittel&amp;rft.au=Melvin%20M.%20Webber&amp;rft.date=1973-06-01&amp;rft.pages=155-169&amp;rft.spage=155&amp;rft.epage=169&amp;rft.issn=0032-2687%2C%201573-0891&amp;rft.language=en"></span>
+
+
+<div class="csl-entry">Wiliam, D. (2006). Assessment: Learning communities can use it to engineer a bridge connecting teaching and learning. <i>JSD</i>, <i>27</i>(1).</div>
+<span class="Z3988" title="url_ver=Z39.88-2004&amp;ctx_ver=Z39.88-2004&amp;rfr_id=info%3Asid%2Fzotero.org%3A2&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Assessment%3A%20Learning%20communities%20can%20use%20it%20to%20engineer%20a%20bridge%20connecting%20teaching%20and%20learning&amp;rft.jtitle=JSD&amp;rft.volume=27&amp;rft.issue=1&amp;rft.aufirst=Dylan&amp;rft.aulast=Wiliam&amp;rft.au=Dylan%20Wiliam&amp;rft.date=2006"></span></div>
+
+</p></div>
+<p>&nbsp;</p><p><br /></p>
+<hr>
+<h1 id="experiencing">Why, how and what - examining a component map
+</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 8</a> </li>
+  <li> Experiencing - <a href="#experiencing">Why, how and what - examining a component map</a> </li>
+  <li> Examining - <a href="#examining">Questioning my components map</a> </li>
+  <li> Explaining - <a href="#explaining">Searching for possibilities and questioning assumptions</a> </li>
+  <li> Applying - <a href="#applying">What are some relevant emerging practices?</a> </li>
+</ol>
+
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67194"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-e704d088-69c8-3941-60bd-ece084622ecd">Last week, your focus was on identifying a research question for your TISL. Defining your R&amp;D question is part of the 3rd stage in the integrated model for TISL we’re using in this course.  The 4th stage is of that model is</p>
+<blockquote>Design method to achieve learning objectives and to answer research questions</blockquote>
+<p dir="ltr">For almost all of the rest of this semester your focus will be on completing this stage of the TISL model (you won’t be expected to implement your intervention).</p>
+<p dir="ltr">This week’s driving question is</p>
+<blockquote>What are some relevant emerging practices?</blockquote>
+<p dir="ltr">In answering this question it is hoped that you’ll spend more time thinking about your research question and thinking about what different practices might usefully allow you to answer that question.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Links to prior weeks **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67195"></a>
+<h2>2. Links to prior weeks</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-69c8-b147-c076-70b4e40007ca">There is little new content presented in this and subsequent weeks. Instead, the focus will be on you drawing on knowledge, skills and outputs from previous weeks of this course and applying them to your context and your research question.</p>
+<p dir="ltr">This week, focuses on helping you understand the problem you’re trying to solve and identifying some possible solutions to that problem. This links most explicitly to <a href="https://usqstudydesk.usq.edu.au/m2/course/view.php?id=9664&amp;section=3#startweek">the week 2 learning path</a> and the <a href="https://usqstudydesk.usq.edu.au/m2/course/view.php?id=9664&amp;section=4#startweek">week 3</a> and <a href="https://usqstudydesk.usq.edu.au/m2/course/view.php?id=9664&amp;section=5#startweek">week 4</a> learning paths.</p>
+<p dir="ltr">The week 2 learning path is focused on the idea of questioning assumptions. Work that can be useful in attempting to understand the problem you’re trying to solve and guide which emerging practices might be useful. Weeks 3 and 4 are focused on engaging and pondering the applicability of emerging practices. Together these will help you identify relevant emerging practices.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. Links to the assignments **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67196"></a>
+<h2>3. Links to the assignments</h2>
+<p dir="ltr" id="docs-internal-guid-99c22893-69c9-3022-bc72-3e3148028606">In terms of Assignment 1, the work you do this week links to:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#a">Assignment 1, Part A</a>, and<br class="kix-line-break">In this part you will have analysed the conceptions of learning and teaching held by you and your discipline. You will have found and used relevant literature and engaged in critical reflection on all of the above. You will draw on this foundation to evaluate and select what you consider to be relevant emerging practices.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#c">Assignment 1, Part C</a>.<br class="kix-line-break">In this part of Assignment 1, you will have developed a personal plan for how you will become aware of, analyse and decide to adopt (or not) new knowledge and skills that could help improve your teaching and learning. Hopefully, you will be able to directly apply and extend this process to identify, analyse and decide to adopt emerging practice relevant to your TISL project.</p>
+</li>
+</ul>
+<p dir="ltr">In terms of Assignment 2, the work you do this week links directly to:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#a">Assignment 2, Part A</a>, and <br class="kix-line-break">Assignment 2, Part A asks you to write a 700 word blog post outlining how you have evaluated and selected the emerging practice(s) you have decided to integrate into your TISL project. You should be planning to use this week’s learning to design, develop and start working on that process.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#b">Assignment 2, Part B</a>.<br class="kix-line-break">Assignment 2, Part B will be your grant application explaining your TISL project. This week’s learning path will help you (amongst other tasks) refine the rationale for your project, the intervention(s) you are planning to use, and the theory underpinning your plan.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  4. The three components - why, how and what **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67197"></a>
+<h2>4. The three components - why, how and what</h2>
+<p dir="ltr" id="docs-internal-guid-e619539d-69c9-aea3-5607-08ca1878c552">This week’s learning path will make use of the three components of Why?  How? and, What? as a way to think about a learning and teaching intervention.  In this context, these components equate to</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Why?<br class="kix-line-break">The <em>rationale</em> for the intervention. What is the spark or problem? Why does it matter? Who is it important for? <br class="kix-line-break"><br class="kix-line-break">Hopefully this is something you’ve made progress on via last week’s learning path, in particular, the activities from <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=816707">the Apply book</a> from last week. In particular, your <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=816707&amp;chapterid=66829">starting points document</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How?<br class="kix-line-break">The <em>pedagogical intervention</em> you will be using to respond to the intervention. What will you do and what will your students be doing?  <br class="kix-line-break"><br class="kix-line-break">This is the focus for this week’s learning path. Helping you identify different <em><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=806042&amp;chapterid=66127">emerging practices</a></em> that might help address the rationale you identified in the previous component.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What?<br class="kix-line-break">The expected <em>impact</em> or <em>change</em> you hope to see as a result from the intervention.  <br class="kix-line-break"><br class="kix-line-break">As you identify different <em>emerging practices</em> it is important that you evaluate the promised impact. Initially,  to help select which <em>emerging practice</em> to implement (covered this week), and subsequently to design the evaluation you will use to explore the actual impact (covered in subsequent weeks)</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  5. One example - Bridging the theory/practice gap **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67198"></a>
+<h2>5. One example - Bridging the theory/practice gap</h2>
+<p dir="ltr" id="docs-internal-guid-77586a33-69cb-0182-cf59-5db5032406e6">The following is a slightly fictitious example of a problem, emerging practice and the use of the three components.  This concrete example of the three components serves a number of aims, including:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Potential benefits of using the components as a map.<br class="kix-line-break">i.e. As mentioned numerous times previously in this course, leaping to a particular understanding of the problem, or worse, to a particular solution to a problem is to be avoided. You should take the time to search out different interpretations of the problem, different solutions and consider them more broadly. The three components could be used as a way to store, compare and contrast different assumptions, problems and solutions.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Concrete example to talk about and question.<br class="kix-line-break">This course is designed around Kolb’s experiential cycle. One assumption from that theory is that concrete experience is important.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  5.1. Context **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67199"></a>
+<h3>5.1. Context</h3>
+<p dir="ltr" id="docs-internal-guid-55fbdc35-69cb-6dcb-bf86-565a7b9c88e0">This example based on a course that I (David Jones) taught previously and which has been mentioned previously in this course. This course was a 3rd year course in a Bachelor of Education focused on helping pre-service teachers develop skills and knowledge to help enhance and transform their students’ learning using digital technology. As part of the course the students are placed for three weeks teaching in a relevant school.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  5.2. Why? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67200"></a>
+<h3>5.2. Why?</h3>
+<p dir="ltr" id="docs-internal-guid-01906412-69cb-d84b-c938-5972e71dcc80">An on-going issue with the course - and more broadly in teacher education (Dalgarno, Gregory, Knox, &amp; Reiners, 2016) - is a perceived gap between university-based learning and professional placement . This creates a number of problems, including:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Students feel under-prepared for using digital technologies in a school context.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">They fail to see the value, purpose, or relevance of university learning activities and theory.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">The mentor teachers for our students often don’t see the relevance of the theory and the use of digital technology.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Students can struggle to see the point of reflection on professional experience and connecting it back to theory.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">There are concerns about the quality of the professional experience and its learning for students.</p>
+</li>
+</ul>
+<p dir="ltr">Leading to the research question I would have (if I were still teaching that course)</p>
+<p dir="ltr">How can EDC3100 student and mentor perceptions of a gap between university-based learning and professional placement be bridged?</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  5.3. How? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67201"></a>
+<h3>5.3. How?</h3>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-69cc-4905-d682-79a6d043e26e">Teacher education literature - such as Dalgarno et al (2016) - includes a range of possible solutions, including: authentic learning, micro-teaching to peers, recording of teaching in context, classroom and technology enhanced role plays (they include references to each of these).</p>
+<p dir="ltr">Issues around professional or work placement exist in other professional disciplines. Paliadelis et al (2015) describe such challenges in the context of educating health professionals and discuss a project</p>
+<blockquote>Designed to support the professional development of both students and their clinical supervisors by offering an interprofessional, innovative e-learning program that, via a story telling model, would contribute to effective work-integrated learning experiences. (p. 398)</blockquote>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Sub-chapter:  5.4. What? **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67202"></a>
+<h3>5.4. What?</h3>
+
+<p>Exploration into the use of virtual role plays using Second Life, Dalgarno et al (2016) found</p>
+<blockquote>a virtual classroom shows promise but there are a number of usability and other issues which need to be resolved before it will be viewed as an effective strategy by all student teachers (p. 126)</blockquote>
+
+<p>The literature cited by Dalgarno et al (2016) on the other potential solutions could be examined to identify potential impacts.</p>
+
+<p>Paliadelis et al (2015) report that evaluation of their use of a story telling model</p>
+<blockquote>clearly indicated that they felt authentically ‘connected’ with the characters in the stories and developed insights that suggested effective learning had occurred. (p. 397)</blockquote>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  6. Start your components map **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67203"></a>
+<h2>6. Start your components map</h2>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Constructing your map</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Based on the work you did in last week’s learning path, and subsequent thinking create your Components Map.  e.g. a Word or Google document that contains the headings: Context; Why; How; and, What.</p>
+<p dir="ltr">In each of the sections, fill in a summary of what detail you have already identified. As you work through the activities in this week’s learning path (and any additional thinking it sparks) update your Components Map.</p>
+<p dir="ltr">Alternatively, you could use this components map as the basis for one or more post on your blog. Perhaps documenting how and why it evolves over time. This would be a good method to provide the foundation for Assignment 2.</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+<p>&nbsp;</p><p><br /></p>
+<hr>
+
+<h1 id="examining">Questioning my components map
+</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 8</a> </li>
+  <li> Experiencing - <a href="#experiencing">Why, how and what - examining a component map</a> </li>
+  <li> Examining - <a href="#examining">Questioning my components map</a> </li>
+  <li> Explaining - <a href="#explaining">Searching for possibilities and questioning assumptions</a> </li>
+  <li> Applying - <a href="#applying">What are some relevant emerging practices?</a> </li>
+</ol>
+
+ <!-- ******** Chapter:  1. The exercise **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67204"></a>
+<h2>1. The exercise</h2>
+<p dir="ltr" id="docs-internal-guid-2c623ce9-69d0-7f17-464a-11304155f4b9">By now you’ve looked at a simple components map for my issue and hopefully started your own component  map document. Time to ask some questions of our thinking so far. Questions that will help you identify which of the many potential interventions you might adopt and why.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Questions for the components map</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Ask the following questions about either <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=821871&amp;chapterid=67199">the EDC3100 component map,</a> the component map you’ve created, or both.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Why?</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">How do you know that this is a problem?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Is there any support for this as a problem elsewhere? Have you looked for the literature?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What are the assumptions that underpin that this is a problem?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are there other solutions that you rejected because you didn’t believe them?</p>
+</li>
+</ul>
+<li dir="ltr">
+<p dir="ltr">How?</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Has it be done elsewhere?  </p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What was the result?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How much effort is involved?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Is your context the same or different? How do you expect that to impact implementation?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What more is needed here to make choices between different interventions?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Who else might need to be asked?</p>
+</li>
+</ul>
+<li dir="ltr">
+<p dir="ltr">What?</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What is the expected impact?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How does this impact relate to your problem? The aims of your course? The program?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Is it worth the effort?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How important is this impact?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Who and what does it impact? Does it impact the student learning experience, student learning outcomes, graduate outcomes, the teacher experience etc?</p>
+</li>
+</ul>
+<li dir="ltr">
+<p dir="ltr">Overall</p>
+</li>
+<ul>
+<li dir="ltr">
+<p dir="ltr">On balance, which of the approaches above might be tried?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What else about the context do you need to know in order to make a judgement.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What other questions should you ask?</p>
+</li>
+</ul>
+</ul>
+</div>
+</div>
+<p dir="ltr"></p>
+<p dir="ltr">Later in this learning path you will be asked to add to this list of questions. Documenting and using a list of questions like this might provide one additional component to the process you use to evaluate and select an emerging practice (<a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#a">assignment 1, Part A</a>).</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+<p>&nbsp;</p><p><br /></p>
+<hr>
+
+<h1 id="explaining">Searching for possibilities and questioning assumptions
+</h1>
+
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 8</a> </li>
+  <li> Experiencing - <a href="#experiencing">Why, how and what - examining a component map</a> </li>
+  <li> Examining - <a href="#examining">Questioning my components map</a> </li>
+  <li> Explaining - <a href="#explaining">Searching for possibilities and questioning assumptions</a> </li>
+  <li> Applying - <a href="#applying">What are some relevant emerging practices?</a> </li>
+</ol>
+
+
+ <!-- ******** Chapter:  1. Introduction **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67205"></a>
+<h2>1. Introduction</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-69e8-0429-0b4e-a78e04b29ddc">The focus for this week is on you developing and applying a creative and emergent process of searching for possible emerging practice that might offer an effective intervention that will fulfill a particular rationale changing your learning and teaching practice. Already this semester you have hopefully developed some new knowledge and skills that can help developing and applying this process. This book seeks to remind you of those knowledge and skills and provide some additional insights that will help you eventually apply that knowledge and skills to Assignment 2.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Questions you might ask</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=821872">Earlier in this learning path</a>, you were asked to apply a list of questions to your nascent component map.</p>
+<p dir="ltr">Before you read through the following, copy and paste those questions into a document.</p>
+
+<p>As you read through the following, add questions to that list informed by what you read (useful for <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#a">Assignment 1, Part A</a>).</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  2. Learning, teaching and wicked problems **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67206"></a>
+<h2>2. Learning, teaching and wicked problems</h2>
+<p dir="ltr" id="docs-internal-guid-76730c6d-69e9-5f89-b7eb-f4f04520bb29">The following quote was used earlier in the course to illustrate the difficulties of re-using an evaluation instrument from one learning and teaching context to another.</p>
+<blockquote>“what works” is not the right question in education. Everything works somewhere, but nothing works everywhere. (Wiliam, 2006, p. 17)</blockquote>
+<p dir="ltr">This same problem applies to pedagogical interventions. Just because Paliadelis et al (2015) found that a story-telling intervention helped people feel authentically connected, doesn’t mean that will happen in my course. Perhaps I won’t understand the intervention well enough, or design an ineffective implementation. Perhaps teacher mentors in schools have less time for contributing to the story formation process. Perhaps the students in my course are so overwhelmed with the digital technologies (and the design of the cours), they engage with the stories in a purely instrumental way.</p>
+<p dir="ltr">Any one (or more) of a huge array of factors could mean that an approach that (reportedly) worked effectively elsewhere, will be a huge failure in my course.</p>
+<p dir="ltr">This is largely in part to issue that teaching and learning - especially with digital technologies - is a wicked problem (Koehler &amp; Mishra, 2008; Borko, Whitcomb &amp; Liston, 2009). This <a href="https://www.wickedproblems.com/1_wicked_problems.php">web page</a>, Wikipedia’s page on wicked problems, and <a href="https://www.wickedproblems.com/1_wicked_problems.php">this resource</a> from TEDed all provide more insight into the nature of <a href="https://en.wikipedia.org/wiki/Wicked_problem">wicked problems</a>. Rittel and Webber (1973) provide the original description of wicked problems. In short, a wicked problem is distinct from simple, hard or complex (tame) problems. It can <strong>NOT</strong> be solved the same way. In fact, wicked problems are never solved.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  3. This is not a sequential process **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67207"></a>
+<h2>3. This is not a sequential process</h2>
+<p dir="ltr" id="docs-internal-guid-26ba90d1-69ea-c8bf-27ba-98d9cb4d3d18">Feel free to explore and read more about wicked problems. It is mentioned here solely to make the point that the process of identifying an effective emerging practice to address a particular rationale within the context of learning and teaching is a wicked problem. In particular, the point is to argue that any such process is not a simple, sequential, logical process. It does not and cannot be effectively completed by stepping through the process of</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Analysing requirements.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Searching for possible solutions.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Performing a cost/benefit analysis.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Selecting the best solution.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Implementing it.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Evaluating it.</p>
+</li>
+</ol>
+<p dir="ltr">Or in the case of the following</p>
+<ol>
+<li dir="ltr">
+<p dir="ltr">Searching for possibilities; and</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Questioning assumptions.</p>
+</li>
+</ol>
+<p dir="ltr">Rather than see the following as a sequential process, please use them as suggestions of activities and approaches to integrate creatively and flexibly into your own practice.</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Suggestion</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">As you work on Assignment 2 it is potentially a good idea to be actively trying to document (i.e. blog posts) what you do as you cycle through the following two steps, and any other related work. Doing so provides you with a record of what you’ve done for subsequent reflection; encourages you to write and thus hopefully think more deeply about what you’re thinking about; and, provides an archive of material to draw upon as part of assignment 2.</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  4. Search for possibilities (emerging practice) **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67208"></a>
+<h2>4. Search for possibilities (emerging practice)</h2>
+<p dir="ltr" id="docs-internal-guid-20576116-69ec-0f18-3f86-2e5f85dbe22c">Since you made progress toward identifying the research question for your TISL last week, you should have been able to put some information into the <em>Why</em> section of your <em>component map</em>.  That is, you should have some insight into the particular reason why you want to engage in TISL. The question is what form that engagement might take? What emerging practice might help?</p>
+<p dir="ltr">This is where your submission <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#c">for Assignment 1, Part C</a> should help. It should provide you with the insight necessary to be aware of some relevant emerging practice, or where to look for possibilities. Hopefully, <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=806150">this book</a> from the week 3 learning path contributed some guidance to the formulation of your plan.</p>
+<h4 dir="ltr">Gathering ad hoc experiences and insights</h4>
+<p dir="ltr">My example components map from earlier in this learning path included mention of Paliadelis et al (2015) and their use of digitial story telling as an emerging practice. I was not aware of this work until a couple of weeks ago when I was reading a draft grant application prepared by some colleagues at USQ.</p>
+<p dir="ltr">Reinforcing the value of engaging with the work of others and keeping an eye out for interesting <em>emerging practice</em>.</p>
+<p dir="ltr">My experience here also helps illustrate some other practices you may wish to adopt in your search for relevant, emerging practices, including:</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Look to literature for specific terms and related literature.<br class="kix-line-break">Paliadelis and Wood (2016) use the term <em>storytelling</em> and report on literature that positions it as “a powerful educational medium in many professions” (p. 39). While somewhat aware of storytelling, I had never made the connection with its use within professions. Finding this term and associated literature using it for learning and teaching provides an avenue to explore for more detail and perhaps other related emerging practice. Often not knowing the right term can be the biggest barrier to finding useful literature.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Be open to discussion from other disciplinary backgrounds.<br class="kix-line-break">It also highlights the importance of using experience and literature from different disciplinary backgrounds.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Be aware of practice in your discipline.<br class="kix-line-break">Dalgarno et al (2016) provides a useful overview of prior attempts to teacher educators to overcome the particular problem that I touched on in my components map. It provided a range of additional emerging practice to explore and evaluate.</p>
+</li>
+</ul>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+ <!-- ******** Chapter:  5. Question assumptions **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67209"></a>
+<h2>5. Question assumptions</h2>
+<p dir="ltr" id="docs-internal-guid-8020a0f2-69ed-7366-39bc-2bb435b0f952">There are many different perspectives on learning and teaching issues. Different perspectives based on different sets of assumptions about knowledge, learning etc. As has been reinforced throughout the course, often the biggest challenge in engaging with TISL is identifying, questioning and recreating the assumptions that underpin your practice.</p>
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65155#a">Assignment 1, Part A</a> was designed to help you query the assumptions that underpin your own practice and that of your discipline. This should be an on-going process. It’s also a process that should be applied critically to the different types of emerging practice you discover. Don’t just accept the positive, glowing report offered by someone who’s tried something new and is reporting on it. Instead,</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">Critically examine their claims to success.<br class="kix-line-break">The evaluation performed by Paliadelis et al (2015) was on the basis of five open-text evaluative questions posed to learners (i.e. self-report data) with no indication of what percentage of all students contributed responses. In particular, there appear to be questions remaining around the level of participation from online learners. Paliadelis et al (2015) also indicate that more work is required to “understand the use of stories as an educational tool” (p. 402). Suggesting that while potentially attractive, it may be difficult to implement successfully and gain significant levels of participation from online learners.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Examine which theory (if any) underpins the work.<br class="kix-line-break">As <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66012">mentioned earlier</a>, in education theory provides a way of organising principles of undestanding and action. Looking at the particular (implicit or explicit) theories that underpin an intervention is a useful step in identifying and evaluating its assumptions. For example, is the intervention framed in terms of: <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803194&amp;chapterid=66014">what students are; what teachers do; or, what students do</a>.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What are the causal, prescriptive and paradigmatic assumptions?<br class="kix-line-break">Earlier in the learning path <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803179&amp;chapterid=66008">you were asked to</a> engage with a reading on these different types of assumptions. Have you looked for and questioned these different types of assumptions in your own thinking about the why and how of your TISL? What about the emerging practices in your component map.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Have you applied a process for critical reflection?<br class="kix-line-break">e.g. the suggested process shared <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=803179&amp;chapterid=66004">earlier in the course</a>. Have you tried to <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=806150&amp;chapterid=66140">use a critical eye</a> as part of this process? Have you actively searched for literature that is critical or questioning of the emerging practice you’ve been considering?</p>
+</li>
+</ul>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Exercise</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr">Have you actively used the linked to resources on this page to add to a list of questions about your component map?</p>
+</div>
+</div>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p></div>
+
+<p>&nbsp;</p><p><br /></p>
+<hr>
+
+<h1 id="applying">What are some relevant emerging practices?
+</h1>
+ 
+<h3>Table of Contents</h3>
+
+<ol>
+  <li> <a href="#overview">Overview of Week 8</a> </li>
+  <li> Experiencing - <a href="#experiencing">Why, how and what - examining a component map</a> </li>
+  <li> Examining - <a href="#examining">Questioning my components map</a> </li>
+  <li> Explaining - <a href="#explaining">Searching for possibilities and questioning assumptions</a> </li>
+  <li> Applying - <a href="#applying">What are some relevant emerging practices?</a> </li>
+</ol>
+
+
+
+ <!-- ******** Chapter:  1. Your plan **********  -->
+
+<hr>
+
+<div class="book_chapter"><a name="ch67210"></a>
+<h2>1. Your plan</h2>
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-69f0-a0b7-6d8d-d94c479643a9">It’s time now for you to answer the driving question for this week</p>
+<blockquote>What are some relevant emerging practices?</blockquote>
+<p dir="ltr">Given the research question you identified last week, what are some emerging practices that could help you answer that question effectively, innovatively and in a contextually appropriate way?</p>
+<h4 dir="ltr">What is your plan?</h4>
+<p dir="ltr"><a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=790234&amp;chapterid=65156#a">Assignment 2, Part A</a> requires that you develop and submit a description of how you went about selecting the particular emerging practice(s) you’ll integrate into your grant application (Assignment 2, Part B). A good early step might be to start thinking about the shape of that plan.</p>
+
+<p><link href="https://djon.es/styles.css" rel="stylesheet" type="text/css"></p>
+
+<p>
+<script src="https://djon.es/edu8702_macro.js" type="text/javascript"></script>
+</p>
+
+
+<div class="dj_task">
+
+
+<div class="dj_task_title">
+
+<p>Developing your plan</p>
+</div>
+
+
+<div class="dj_activity">
+<p dir="ltr" id="docs-internal-guid-46c4f8b4-69f1-6e79-bf93-d5666ea0f0db">Drawing on the content, activities and links presented in this learning path and any other insight you think appropriate, use the following questions (drawn mostly from the rubric for Assignment 1, Part A) to think about the future or current state of the plan you will use to identify and select relevant emerging practices.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr">What is critical evaluation? How are you going to engage in critical evaluation of emerging practice?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What might an appropriate process or framework for evaluating emerging practice look like in your context?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">How many different examples of emerging practice will you need to analyse to be sufficient? One? Two? More?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What, if any, blog posts are you planning to write as you evaluate emerging practice? Might blog posts form a form of journal or diary of your work identifying and evaluating emerging practice?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What is the rationale you have for selecting emerging practice? What makes one emerging practice better than another?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What role, if any, might the component map and the <a href="https://usqstudydesk.usq.edu.au/m2/mod/book/view.php?id=821872">list of related questions </a>play in your considerations?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Are you going to make use of peers or a critical friend? Who? How?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">What elements of Assignment 1, Part A and Part C can be included? How are you going to identify emerging practice?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">As you use your initial plan, will it evolve and improve? How are you going to document that?</p>
+</li>
+</ul>
+<p dir="ltr">Once you’ve developed an initial version of your plan, now might be a good time to start applying it.</p>
+</div>
+</div></div>
